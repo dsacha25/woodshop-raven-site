@@ -1,3 +1,5 @@
+'use client';
+
 import SectionTitle from '@/components/titles/section-title';
 import React from 'react';
 import {
@@ -13,7 +15,7 @@ import FormTextArea from '@/components/inputs/form-text-area';
 import { sendEmail } from '@/utils/send-email';
 
 export interface ContactFormData {
-	fullName: string;
+	name: string;
 	email: string;
 	description: string;
 }
@@ -30,8 +32,10 @@ const Contact = () => {
 	});
 
 	const onSubmit: SubmitHandler<ContactFormData> = (data) => {
+		console.log(`DATA: ${JSON.stringify(data)}`);
+
 		sendEmail(data);
-		reset();
+		// reset();
 	};
 
 	return (
@@ -39,10 +43,10 @@ const Contact = () => {
 			<SectionTitle title="Get A Quote" width="100%" />
 			<ContactForm>
 				<FormInput
-					{...register('fullName')}
-					hasData={!!watch('fullName')}
+					{...register('name')}
+					hasData={!!watch('name')}
 					label="Full Name*"
-					error={errors.fullName}
+					error={errors.name}
 					required
 				/>
 

@@ -1,17 +1,19 @@
 import { ContactFormData } from '@/pages/contact';
 
 export function sendEmail(data: ContactFormData) {
-	const apiEnpoint = '/api/email';
+	const apiEndpoint = '/api/email';
 
-	fetch(apiEnpoint, {
+	fetch(apiEndpoint, {
 		method: 'POST',
 		body: JSON.stringify(data),
 	})
 		.then((res) => res.json())
 		.then((response) => {
-			alert(response.message);
+			alert('Message sent!');
 		})
 		.catch((err) => {
+			console.log('Error', err);
+
 			alert(err);
 		});
 }

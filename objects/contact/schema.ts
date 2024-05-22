@@ -2,7 +2,7 @@ import * as yup from 'yup';
 import { ContactFormData } from '../../pages/contact';
 
 const schema = yup.object<ContactFormData>().shape({
-	fullName: yup.string().required('Name is required'),
+	name: yup.string().required('Name is required'),
 	email: yup.string().email('Invalid Email').required('Email is required'),
 	description: yup
 		.string()

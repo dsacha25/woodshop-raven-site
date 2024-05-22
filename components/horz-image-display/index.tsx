@@ -8,10 +8,10 @@ import {
 } from './styles';
 
 export interface ImageDisplayProps {
-	src: StaticImageData;
+	src: StaticImageData | string;
 	alt: string;
-	width?: string;
-	height?: string;
+	width?: string | number;
+	height?: string | number;
 	horzAdjustment?: string;
 }
 

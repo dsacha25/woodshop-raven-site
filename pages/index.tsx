@@ -29,7 +29,7 @@ import HorizontalImageDisplay, {
 export default function Home() {
 	const images: ImageDisplayProps[] = [
 		{ src: incenseBurner, alt: 'Incense Burner' },
-		{ src: chessboard, alt: 'Handmade Chess Set', horzAdjustment: '-75%' },
+		{ src: chessboard, alt: 'Handmade Chess Set', horzAdjustment: '-86%' },
 		{ src: laraBox, alt: 'Woodburned Tarot Card Box' },
 		{ src: paddle, alt: 'Bondage Paddle' },
 		{
