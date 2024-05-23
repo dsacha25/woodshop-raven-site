@@ -15,18 +15,18 @@ const theme: DefaultTheme = {
 		errorBackground: '#ffb4ab',
 	},
 };
-
+/* 
 const kalmansk = localFont({ src: './Kalmansk-Regular.otf' });
-
+ */
 export default function App({ Component, pageProps }: AppProps) {
 	return (
-		<main>
+		<>
 			<ThemeProvider theme={theme}>
 				<GlobalStyle />
 				<Header />
 				<Component {...pageProps} />
 				<Footer />
 			</ThemeProvider>
-		</main>
+		</>
 	);
 }
