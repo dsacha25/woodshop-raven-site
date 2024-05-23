@@ -4,10 +4,10 @@ import React from 'react';
 
 type Props = {};
 
-const ProductItemPage = ({ params }: { params: { slug: string } }) => {
+const ProductItemPage = ({ params }) => {
 	return (
 		<ShopPageContainer>
-			<SectionTitle title={'params'} />
+			<SectionTitle title={params.id} />
 		</ShopPageContainer>
 	);
 };

@@ -29,7 +29,7 @@ const ShopItem = ({
 	const router = useRouter();
 
 	const handleRoute = (url: string) => {
-		// router.push(url);
+		router.push(url);
 	};
 
 	return (

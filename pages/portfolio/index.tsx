@@ -1,4 +1,5 @@
-import { Main } from '@/components/sharedstyles';
+'use client';
+
 import SectionTitle from '@/components/titles/section-title';
 import React from 'react';
 import {

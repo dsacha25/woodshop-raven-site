@@ -25,6 +25,7 @@ import HorizontalImageDisplay, {
 	ImageDisplayProps,
 } from '@/components/horz-image-display';
 import { Metadata } from 'next';
+import { ImagesGradient } from '@/components/portfolio-display/styles';
 /* 
 type ParamProps = {
 	params: { id: string };
@@ -62,6 +63,7 @@ export default function Home() {
 					<CenterFadeDivider marginY="12px" />
 					<HorizontalImageDisplay images={images} height="640px" />
 					<MobileHeroWrapper>
+						<ImagesGradient />
 						<MobileHeroImage
 							src={laraBox}
 							alt="Woodburned Tarot Card Box"
