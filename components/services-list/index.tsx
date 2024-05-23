@@ -58,7 +58,7 @@ const ServicesList = () => {
 	return (
 		<ServicesListContainer>
 			{services.map((service, i) => (
-				<ServiceItemContainer>
+				<ServiceItemContainer key={i}>
 					<ServiceItemContentWrapper index={i}>
 						<ActionContainer>
 							<OutlineActionButton onClick={() => router.push(service.url)}>

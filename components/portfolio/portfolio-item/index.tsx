@@ -5,10 +5,11 @@ import {
 	MobilePortfolioImage,
 	PortfolioItemContainer,
 } from './styles';
-import HorizontalImageDisplay from '../horz-image-display';
-import { RightFade } from '../dividers/styles';
-import { SubTitle } from '../titles/subtitle';
+
 import { PortfolioItemProps } from '@/objects/portfolio/portfolio-items-list';
+import { SubTitle } from '@/components/titles/subtitle';
+import { RightFade } from '@/components/dividers/styles';
+import HorizontalImageDisplay from '@/components/horz-image-display';
 
 function PortfolioItem({
 	images,
@@ -16,7 +17,7 @@ function PortfolioItem({
 	url,
 }: Omit<PortfolioItemProps, 'quote' | 'description'>) {
 	return (
-		<PortfolioItemContainer href={url}>
+		<PortfolioItemContainer href={`portfolio/${url}`}>
 			<HorizontalImageDisplay images={images} height="calc(100vw / 6)" />
 			<MobilePortfolioContainer>
 				<MobilePortfolioImage src={images[1].src} alt={images[0].alt} />

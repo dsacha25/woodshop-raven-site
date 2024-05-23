@@ -12,11 +12,11 @@ import {
 	ShopItemImageContainer,
 	VerticalDivider,
 } from './styles';
-import { IconButton } from '../buttons/styles';
+import { IconButton } from '../../buttons/styles';
 
 import arrowRight from '@/public/images/icons/arrow-right.svg';
 import { ShopItemProps } from '@/objects/shop/shop-items-list';
-import { useRouter } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 
 const ShopItem = ({
 	src,
@@ -38,18 +38,18 @@ const ShopItem = ({
 				<ShopItemImage src={src} alt={name} />
 			</ShopItemImageContainer>
 			<DetailsContainer>
+				<ItemName>{name}</ItemName>
 				<ItemInfoContainer>
-					<ItemName>{name}</ItemName>
 					<ItemStatusContainer>
 						<ItemStatus>${price}.00 </ItemStatus>
 						<HorizontalDivider />
-						<ItemStatus> {stock > 0 ? stock : 'Out of stock'}</ItemStatus>
+						<ItemStatus> {stock > 0 ? stock : 'sold out'}</ItemStatus>
 					</ItemStatusContainer>
+					<VerticalDivider />
+					<IconButton onClick={() => handleRoute(`/shop${url}`)}>
+						<AddToCartIcon src={arrowRight} alt="Add to addToCart" />
+					</IconButton>
 				</ItemInfoContainer>
-				<VerticalDivider />
-				<IconButton onClick={() => handleRoute(url)}>
-					<AddToCartIcon src={arrowRight} alt="Add to addToCart" />
-				</IconButton>
 			</DetailsContainer>
 		</ShopItemContainer>
 	);

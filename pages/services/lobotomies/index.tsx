@@ -20,7 +20,7 @@ import { CenterFadeDivider, LeftFade } from '@/components/dividers/styles';
 import paddle from '@/public/images/paddles/v1/Paddle-V1_01.webp';
 import { SolidButton } from '@/components/buttons/styles';
 import { Paragraph } from '@/components/text/styles';
-import { ImagesGradient } from '@/components/portfolio-display/styles';
+import { ImagesGradient } from '@/components/portfolio/portfolio-display/styles';
 import { GradientDown } from '@/components/gradients/styles';
 import Testimony, { TestimonyProps } from '@/components/testimony';
 

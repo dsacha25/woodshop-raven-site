@@ -1,9 +1,14 @@
 import type { AppProps } from 'next/app';
-import { ThemeProvider, type DefaultTheme } from 'styled-components';
+import {
+	StyleSheetManager,
+	ThemeProvider,
+	type DefaultTheme,
+} from 'styled-components';
 import GlobalStyle from '@/components/globalstyles';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import localFont from 'next/font/local';
+import emotionIsPropValid from '@emotion/is-prop-valid';
 
 const theme: DefaultTheme = {
 	colors: {
@@ -20,13 +25,13 @@ const kalmansk = localFont({ src: './Kalmansk-Regular.otf' });
  */
 export default function App({ Component, pageProps }: AppProps) {
 	return (
-		<>
+		<StyleSheetManager shouldForwardProp={(prop) => emotionIsPropValid(prop)}>
 			<ThemeProvider theme={theme}>
 				<GlobalStyle />
 				<Header />
 				<Component {...pageProps} />
 				<Footer />
 			</ThemeProvider>
-		</>
+		</StyleSheetManager>
 	);
 }

@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 import line from '../../public/images/icons/Hamburger_Line.png';
 import Image from 'next/image';
 import { PageLink } from '../header/styles';
+import { IconButton } from '../buttons/styles';
 
 const transition = css`
 	transition: 0.5s ease-in;
@@ -94,6 +95,48 @@ export const MenuLink = styled(PageLink)`
 
 	@media screen and (max-width: 900px) {
 		font-size: 2rem;
+	}
+`;
+
+export const ShopMenuContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+`;
+
+export const ShopMenuTop = styled.div`
+	display: flex;
+`;
+
+const dropDownOpenStyles = css`
+	height: 100%;
+`;
+
+export const ShopMenuDropDown = styled.div`
+	display: flex;
+	flex-direction: column;
+
+	height: 0;
+	width: 100%;
+	overflow: hidden;
+
+	padding-left: 40px;
+
+	transition: 0.6s ease-out;
+
+	&.open {
+		${dropDownOpenStyles}
+	}
+`;
+
+export const DropDownButton = styled(IconButton)`
+	width: auto;
+`;
+
+export const MenuLinkSmall = styled(PageLink)`
+	justify-content: start !important;
+
+	@media screen and (max-width: 900px) {
+		font-size: 1rem;
 	}
 `;
 

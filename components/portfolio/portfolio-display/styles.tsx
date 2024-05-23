@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import { SolidButton } from '../buttons/styles';
+import { SolidButton } from '../../buttons/styles';
 
 export const PortfolioDisplayContainer = styled.div`
 	display: flex;

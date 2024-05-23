@@ -10,8 +10,8 @@ import {
 } from './styles';
 import { Description } from '@/page-styles/about/styles';
 import { useRouter } from 'next/navigation';
-import Testimony from '../testimony';
-import { CenterFadeDivider } from '../dividers/styles';
+import Testimony from '../../testimony';
+import { CenterFadeDivider } from '../../dividers/styles';
 import { PortfolioItemProps } from '@/objects/portfolio/portfolio-items-list';
 
 const PortfolioDisplay = ({

@@ -56,7 +56,7 @@ const portfolioItems: PortfolioItemProps[] = [
 			},
 		],
 		title: 'Chess Set & Box',
-		url: 'portfolio/chess-set',
+		url: 'chess-set',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis hendrerit risus. Vestibulum in pulvinar risus, a egestas velit. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus. Sed condimentum tortor eu nisl vestibulum, euismod venenatis nisi iaculis. Pellentesque massa nisi, placerat quis faucibus in, bibendum ut sapien. Sed eget arcu augue.',
 		quote:
@@ -90,7 +90,7 @@ const portfolioItems: PortfolioItemProps[] = [
 			},
 		],
 		title: 'Tarot Card Box',
-		url: 'portfolio/tarot-card-box',
+		url: 'tarot-card-box',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis hendrerit risus. Vestibulum in pulvinar risus, a egestas velit. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus. Sed condimentum tortor eu nisl vestibulum, euismod venenatis nisi iaculis. Pellentesque massa nisi, placerat quis faucibus in, bibendum ut sapien. Sed eget arcu augue.',
 		quote: "''Pretty sure this is cursed. I love it.'' —The Devil",
@@ -123,7 +123,7 @@ const portfolioItems: PortfolioItemProps[] = [
 			},
 		],
 		title: 'Orchid Keepsake Box',
-		url: 'portfolio/orchid-keepsake-box',
+		url: 'orchid-keepsake-box',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis hendrerit risus. Vestibulum in pulvinar risus, a egestas velit. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus. Sed condimentum tortor eu nisl vestibulum, euismod venenatis nisi iaculis. Pellentesque massa nisi, placerat quis faucibus in, bibendum ut sapien. Sed eget arcu augue.',
 		quote: "''It's a box.'' —Lucifer",
@@ -156,7 +156,7 @@ const portfolioItems: PortfolioItemProps[] = [
 			},
 		],
 		title: 'Custom Incense Burner',
-		url: 'portfolio/incense-burner',
+		url: 'incense-burner',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis hendrerit risus. Vestibulum in pulvinar risus, a egestas velit. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus. Sed condimentum tortor eu nisl vestibulum, euismod venenatis nisi iaculis. Pellentesque massa nisi, placerat quis faucibus in, bibendum ut sapien. Sed eget arcu augue.',
 		quote: "''This thing is the tits.'' —Merlin",

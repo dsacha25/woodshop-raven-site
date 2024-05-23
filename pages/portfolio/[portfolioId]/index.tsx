@@ -1,20 +1,28 @@
-<<<<<<< HEAD
-=======
-'use client';
-
->>>>>>> b98c60c21f1a65157bbebb8fd4fe6bdc3f9e4287
+import React from 'react';
+import PortfolioDisplay from '@/components/portfolio/portfolio-display';
 import SectionTitle from '@/components/titles/section-title';
+import portfolioItems from '@/objects/portfolio/portfolio-items-list';
 import { PortfolioPageContainer } from '@/page-styles/portfolio/styles';
-import React, { FC } from 'react';
+import _ from 'lodash';
+import { useParams } from 'next/navigation';
 
-interface PortfolioItemPageProps {
-	params: { portfolioId: string };
-}
+const PortfolioItem = () => {
+	const params = useParams<{ portfolioId: string }>();
 
-const PortfolioItem: FC<PortfolioItemPageProps> = ({ params }) => {
-	console.log(params);
+	const portfolioItem = _.find(portfolioItems, ['url', params?.portfolioId]);
 
-	return <PortfolioPageContainer></PortfolioPageContainer>;
+	if (!portfolioItem || !params) return;
+
+	return (
+		<PortfolioPageContainer>
+			<SectionTitle title={portfolioItem.title} />
+			<PortfolioDisplay
+				images={portfolioItem.images}
+				quote={portfolioItem.quote}
+				description={portfolioItem.description}
+			/>
+		</PortfolioPageContainer>
+	);
 };
 
 export default PortfolioItem;

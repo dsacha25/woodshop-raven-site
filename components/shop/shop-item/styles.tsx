@@ -31,23 +31,20 @@ export const DetailsContainer = styled.div`
 	display: grid;
 	width: 100%;
 	height: 100%;
-	grid-template-columns: 1fr auto 80px;
+	grid-template-rows: 1fr auto;
 	place-items: center start;
 	background-color: ${({ theme }) => theme.colors.primary};
-
-	@media screen and (max-width: 800px) {
-		grid-template-columns: 1fr auto auto;
-	}
 `;
 
 export const ItemInfoContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr auto auto;
+	align-items: center;
 `;
 
 export const ItemName = styled.p`
-	font-size: 1.2rem;
+	font-size: 1rem;
 	padding: 0;
 	margin: 0;
 	text-align: start;
@@ -62,16 +59,16 @@ export const ItemName = styled.p`
 
 export const ItemStatusContainer = styled.div`
 	display: grid;
-	grid-template-columns: auto auto 1fr;
+	grid-template-columns: 1fr auto 1fr;
 	width: 100%;
 	justify-content: center;
 	align-items: center;
 	padding-left: 20px;
-	gap: 10px;
+	gap: 6px;
 `;
 
 export const ItemStatus = styled.p`
-	font-size: 1rem;
+	font-size: 0.8rem;
 	color: #b60009;
 
 	@media screen and (max-width: 800px) {
@@ -80,14 +77,14 @@ export const ItemStatus = styled.p`
 `;
 
 export const VerticalDivider = styled.div`
-	width: 3px;
-	height: 80%;
+	width: 2px;
+	height: 60%;
 	background-color: ${({ theme }) => theme.colors.background};
 	border-radius: 10px;
 `;
 
 export const HorizontalDivider = styled.div`
-	width: 20px;
+	width: 10px;
 	height: 2px;
 	justify-self: center;
 	border-radius: 3px;

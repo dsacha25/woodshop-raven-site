@@ -9,12 +9,29 @@ export const ShopPageContainer = styled.div`
 	padding: 0 10vw;
 `;
 
+export const ShopContentWrapper = styled.div`
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 20px;
+
+	@media screen and (max-width: 800px) {
+		grid-template-columns: 1fr;
+	}
+`;
+
+export const ShopFilterContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: black;
+`;
+
 export const ShopList = styled.div`
 	display: grid;
 	place-items: center;
 	width: 100%;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 100px 50px;
+	gap: 50px 25px;
 
 	@media screen and (max-width: 1300px) {
 		grid-template-columns: repeat(2, 1fr);

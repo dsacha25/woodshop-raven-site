@@ -25,7 +25,7 @@ import HorizontalImageDisplay, {
 	ImageDisplayProps,
 } from '@/components/horz-image-display';
 import { Metadata } from 'next';
-import { ImagesGradient } from '@/components/portfolio-display/styles';
+import { ImagesGradient } from '@/components/portfolio/portfolio-display/styles';
 /* 
 type ParamProps = {
 	params: { id: string };
