@@ -60,7 +60,7 @@ const portfolioItems: PortfolioItemProps[] = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis hendrerit risus. Vestibulum in pulvinar risus, a egestas velit. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus. Sed condimentum tortor eu nisl vestibulum, euismod venenatis nisi iaculis. Pellentesque massa nisi, placerat quis faucibus in, bibendum ut sapien. Sed eget arcu augue.',
 		quote:
-			"''I would literally eat my own child to get another one of these.'' -The Pope",
+			"''I would literally eat my own child to get another one of these.'' —The Pope",
 	},
 	{
 		images: [
@@ -93,7 +93,7 @@ const portfolioItems: PortfolioItemProps[] = [
 		url: 'portfolio/tarot-card-box',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis hendrerit risus. Vestibulum in pulvinar risus, a egestas velit. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus. Sed condimentum tortor eu nisl vestibulum, euismod venenatis nisi iaculis. Pellentesque massa nisi, placerat quis faucibus in, bibendum ut sapien. Sed eget arcu augue.',
-		quote: "''It's fucking cursed. I love it. -The Devil",
+		quote: "''Pretty sure this is cursed. I love it.'' —The Devil",
 	},
 	{
 		images: [
@@ -126,7 +126,7 @@ const portfolioItems: PortfolioItemProps[] = [
 		url: 'portfolio/orchid-keepsake-box',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis hendrerit risus. Vestibulum in pulvinar risus, a egestas velit. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus. Sed condimentum tortor eu nisl vestibulum, euismod venenatis nisi iaculis. Pellentesque massa nisi, placerat quis faucibus in, bibendum ut sapien. Sed eget arcu augue.',
-		quote: "''It's a box.'' -Lucifer",
+		quote: "''It's a box.'' —Lucifer",
 	},
 	{
 		images: [
@@ -159,7 +159,7 @@ const portfolioItems: PortfolioItemProps[] = [
 		url: 'portfolio/incense-burner',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis hendrerit risus. Vestibulum in pulvinar risus, a egestas velit. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus. Sed condimentum tortor eu nisl vestibulum, euismod venenatis nisi iaculis. Pellentesque massa nisi, placerat quis faucibus in, bibendum ut sapien. Sed eget arcu augue.',
-		quote: "''This thing is the tits.'' -Merlin",
+		quote: "''This thing is the tits.'' —Merlin",
 	},
 ];
 

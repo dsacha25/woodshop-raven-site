@@ -2,7 +2,7 @@ import React from 'react';
 import { CartIcon, PageLink, HomeLink, Nav, LinksContainer } from './styles';
 import logo from './WR_logo_transparent.png';
 
-import cart from '../../public/images/icons/cart-outline.svg';
+import cart from '@/public/images/icons/cart-outline.svg';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import MobileMenu from '../sandwich-menu';

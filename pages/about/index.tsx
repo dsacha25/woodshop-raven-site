@@ -7,20 +7,15 @@ import {
 	MobileSelfie,
 	NameContainer,
 	NameText,
-} from '../../page-styles/about/styles';
+} from '@/page-styles/about/styles';
 import SectionTitle from '@/components/titles/section-title';
 import HorizontalImageDisplay, {
 	ImageDisplayProps,
 } from '@/components/horz-image-display';
-import david_01 from '../../public/images/branding/me_01.webp';
-import david_02 from '../../public/images/branding/me_02.webp';
-import david_03 from '../../public/images/branding/me_03.webp';
+import david_01 from '@/public/images/branding/me_01.webp';
+import david_02 from '@/public/images/branding/me_02.webp';
+import david_03 from '@/public/images/branding/me_03.webp';
 import { RightFade } from '@/components/dividers/styles';
-import {
-	MobileHeroImage,
-	MobileHeroWrapper,
-	RavenBackgroundImage,
-} from '../../page-styles/home/home-styles';
 
 const About = () => {
 	const images: ImageDisplayProps[] = [
@@ -36,7 +31,7 @@ const About = () => {
 				<AboutImagesWrapper>
 					<HorizontalImageDisplay images={images} height="660px" />
 
-					<MobileSelfie src={david_03} alt="David Sacha" />
+					<MobileSelfie src={david_03} alt="David Sacha" priority />
 
 					<NameContainer>
 						<RightFade />

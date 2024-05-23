@@ -5,7 +5,7 @@ export const ShopPageContainer = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	gap: 50px;
-	width: 100vw;
+	width: 100%;
 	padding: 0 10vw;
 `;
 

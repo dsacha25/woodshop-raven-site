@@ -16,6 +16,7 @@ export const TagLineSection = styled.div`
 
 	@media screen and (max-width: 700px) {
 		margin-top: 0px;
+		height: 600px;
 	}
 `;
 
@@ -129,5 +130,6 @@ export const ServicesSection = styled.div`
 
 	@media screen and (max-width: 700px) {
 		padding-top: 0px;
+		gap: 150px;
 	}
 `;

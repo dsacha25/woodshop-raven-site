@@ -1,7 +1,7 @@
 import React from 'react';
-import { PortfolioPageContainer } from '../../../page-styles/portfolio/styles';
+import { PortfolioPageContainer } from '@/page-styles/portfolio/styles';
 import SectionTitle from '@/components/titles/section-title';
-import portfolioItems from '../../../objects/portfolio/portfolio-items-list';
+import portfolioItems from '@/objects/portfolio/portfolio-items-list';
 import PortfolioDisplay from '@/components/portfolio-display';
 
 type Props = {};

@@ -32,10 +32,8 @@ const Contact = () => {
 	});
 
 	const onSubmit: SubmitHandler<ContactFormData> = (data) => {
-		console.log(`DATA: ${JSON.stringify(data)}`);
-
 		sendEmail(data);
-		// reset();
+		reset();
 	};
 
 	return (

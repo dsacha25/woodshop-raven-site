@@ -5,9 +5,7 @@ import {
 	MobilePortfolioImage,
 	PortfolioItemContainer,
 } from './styles';
-import HorizontalImageDisplay, {
-	ImageDisplayProps,
-} from '../horz-image-display';
+import HorizontalImageDisplay from '../horz-image-display';
 import { RightFade } from '../dividers/styles';
 import { SubTitle } from '../titles/subtitle';
 import { PortfolioItemProps } from '@/objects/portfolio/portfolio-items-list';

@@ -12,44 +12,58 @@ export type ShopItemProps = {
 	name: string;
 	category: string;
 	url: string;
+	stock: number;
+	price: number;
 };
 
 const shopItemsList: ShopItemProps[] = [
 	{
 		src: paddle_01,
-		name: 'Paddle',
-		category: 'paddles',
-		url: '/shop/paddles/v1/1',
+		name: 'Walnut Paddle',
+		category: 'kink',
+		url: '/shop/kink/walnut-paddle',
+		stock: 3,
+		price: 80,
 	},
 	{
 		src: incenseBurner,
 		name: 'Incense Burner',
 		category: 'incense',
-		url: '/shop/incense-burners/1',
+		url: '/shop/incense-burners/incense-burner',
+		stock: 1,
+		price: 20,
 	},
 	{
 		src: tobaccoPipe,
-		name: 'Tobacco Pipe',
+		name: 'Smoking Pipe',
 		category: 'pipes',
-		url: '/shop/pipes/1',
+		url: '/shop/pipes/smoking-pipe',
+		stock: 0,
+		price: 40,
 	},
 	{
 		src: charcuterieBoard,
 		name: 'Charcuterie Board',
 		category: 'charcuterie',
-		url: '/shop/charcuterie-boards/1',
+		url: '/shop/charcuterie-boards/charcuterie-board-round',
+		stock: 0,
+		price: 50,
 	},
 	{
 		src: floggerPurple,
 		name: 'Nylon Purple Flogger',
 		category: 'floggers',
-		url: '/shop/floggers/1',
+		url: '/shop/floggers/nylon-purple-flogger',
+		stock: 1,
+		price: 25,
 	},
 	{
 		src: floggerPride,
 		name: 'Nylon Pride Flogger',
 		category: 'floggers',
-		url: '/shop/floggers/2',
+		url: '/shop/floggers/nylon-pride-flogger',
+		stock: 1,
+		price: 25,
 	},
 ];
 

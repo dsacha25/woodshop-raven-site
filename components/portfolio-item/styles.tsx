@@ -32,6 +32,6 @@ export const MobilePortfolioContainer = styled.div`
 `;
 
 export const MobilePortfolioImage = styled(Image)`
-	width: 100%;
-	height: auto;
+	width: auto;
+	height: 100%;
 `;

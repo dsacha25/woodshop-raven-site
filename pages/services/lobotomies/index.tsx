@@ -1,7 +1,6 @@
 import React from 'react';
 import SectionTitle from '@/components/titles/section-title';
-import Image from 'next/image';
-import Lob from '../../../public/images/icons/logotomy_icon.png';
+import Lob from '@/public/images/icons/logotomy_icon.png';
 import {
 	Annotation,
 	DescriptionContainer,
@@ -16,10 +15,9 @@ import {
 	TestimonialsContainer,
 	FullWidthContainer,
 	TestimonyList,
-} from '../../../page-styles/services/styles';
+} from '@/page-styles/services/styles';
 import { CenterFadeDivider, LeftFade } from '@/components/dividers/styles';
 import paddle from '@/public/images/paddles/v1/Paddle-V1_01.webp';
-import { Description } from '@/page-styles/about/styles';
 import { SolidButton } from '@/components/buttons/styles';
 import { Paragraph } from '@/components/text/styles';
 import { ImagesGradient } from '@/components/portfolio-display/styles';

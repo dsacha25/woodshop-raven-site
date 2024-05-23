@@ -36,21 +36,17 @@ export const TestimonyContainer = styled.div`
 	flex-direction: column;
 
 	justify-content: center;
-	align-items: end;
+	align-items: center;
 	padding: 0 5%;
 
 	overflow: hidden;
-
-	@media screen and (max-width: 700px) {
-		align-items: center;
-	}
 `;
 
 export const TestimonyText = styled.p`
 	font-family: kalmansk;
 	font-size: 3rem;
 	font-weight: 400;
-	letter-spacing: 0.2rem;
+	letter-spacing: 0.1rem;
 	text-align: end;
 	margin: 0;
 
@@ -63,7 +59,7 @@ export const TestimonyText = styled.p`
 	}
 
 	@media screen and (max-width: 700px) {
-		font-size: 1.6rem;
+		font-size: 1.5rem;
 		width: 80%;
 		text-align: center;
 	}

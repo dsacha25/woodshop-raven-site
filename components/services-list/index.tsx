@@ -16,15 +16,15 @@ import { GradientLeft, GradientRight } from '../gradients/styles';
 import { RavenBackgroundImage } from '@/page-styles/home/home-styles';
 import { LeftFade, RightFade } from '../dividers/styles';
 
-import chessSet from '../../public/images/ibanez-chess-set/IbanezChessSet_01.webp';
-import laraBox from '../../public/images/lara-box/LaraBox_03.webp';
-import paddle from '../../public/images/paddles/v1/Paddle-V1_01.webp';
+import chessSet from '@/public/images/ibanez-chess-set/IbanezChessSet_01.webp';
+import laraBox from '@/public/images/lara-box/LaraBox_03.webp';
+import paddle from '@/public/images/paddles/v1/Paddle-V1_01.webp';
 import { SubTitle } from '../titles/subtitle';
 
 type ServiceItemProps = {
 	title: string;
 	actionText: string;
-	link: string;
+	url: string;
 	src: StaticImageData;
 	alt: string;
 };
@@ -36,21 +36,21 @@ const ServicesList = () => {
 		{
 			title: 'Woodworking',
 			actionText: 'View Work',
-			link: '/portfolio',
+			url: '/portfolio',
 			src: chessSet,
 			alt: 'Chess Set',
 		},
 		{
 			title: 'Wood Burning',
 			actionText: 'Contact',
-			link: '/contact',
+			url: '/contact',
 			src: laraBox,
 			alt: 'Wood Burning',
 		},
 		{
 			title: 'Lobotomies',
 			actionText: 'View More',
-			link: '/services/lobotomies',
+			url: '/services/lobotomies',
 			src: paddle,
 			alt: 'Paddles',
 		},
@@ -61,11 +61,11 @@ const ServicesList = () => {
 				<ServiceItemContainer>
 					<ServiceItemContentWrapper index={i}>
 						<ActionContainer>
-							<OutlineActionButton onClick={() => router.push(service.link)}>
+							<OutlineActionButton onClick={() => router.push(service.url)}>
 								{service.actionText}
 							</OutlineActionButton>
 						</ActionContainer>
-						<ServiceItemImageContainer>
+						<ServiceItemImageContainer href={service.url}>
 							{i % 2 != 0 ? (
 								<GradientRight width="100%" />
 							) : (

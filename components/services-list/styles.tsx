@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import { OutlineButton } from '../buttons/styles';
+import Link from 'next/link';
 
 interface ServiceProps {
 	index: number;
@@ -15,7 +16,7 @@ export const ServicesListContainer = styled.div`
 	gap: 500px;
 
 	@media screen and (max-width: 700px) {
-		gap: 300px;
+		gap: 150px;
 	}
 `;
 
@@ -60,7 +61,7 @@ export const OutlineActionButton = styled(OutlineButton)`
 	}
 `;
 
-export const ServiceItemImageContainer = styled.div`
+export const ServiceItemImageContainer = styled(Link)`
 	display: flex;
 	width: 100%;
 	height: auto;

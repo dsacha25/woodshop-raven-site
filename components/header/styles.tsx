@@ -8,7 +8,7 @@ import menu from '../../public/images/icons/cart-outline.svg';
 export const Nav = styled.nav`
 	height: auto;
 	width: 100%;
-	padding: 2% 4%;
+	padding: 2% 4% 0;
 	display: flex;
 	gap: 10vw;
 	justify-content: space-between;
@@ -74,6 +74,10 @@ export const PageLink = styled(Link)<LinkProps>`
 		@media (max-width: 1250px) {
 			display: none;
 		}
+	}
+
+	&.hidden {
+		display: none;
 	}
 `;
 

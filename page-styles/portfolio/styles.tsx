@@ -18,5 +18,5 @@ export const PortfolioContentContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
-	gap: 250px;
+	gap: 100px;
 `;

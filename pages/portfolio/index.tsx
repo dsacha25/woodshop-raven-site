@@ -4,9 +4,9 @@ import React from 'react';
 import {
 	PortfolioContentContainer,
 	PortfolioPageContainer,
-} from '../../page-styles/portfolio/styles';
+} from '@/page-styles/portfolio/styles';
 import PortfolioItem from '@/components/portfolio-item';
-import portfolioItems from '../../objects/portfolio/portfolio-items-list';
+import portfolioItems from '@/objects/portfolio/portfolio-items-list';
 
 const Portfolio = () => {
 	return (
