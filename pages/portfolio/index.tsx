@@ -1,4 +1,3 @@
-import { Main } from '@/components/sharedstyles';
 import SectionTitle from '@/components/titles/section-title';
 import React from 'react';
 import {
