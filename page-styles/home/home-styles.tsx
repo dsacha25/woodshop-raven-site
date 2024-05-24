@@ -10,6 +10,35 @@ export const HeroSection = styled.div`
 	position: relative;
 `;
 
+export const BrandName = styled.h1`
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: 0.25rem;
+	font-weight: 400;
+
+	color: ${({ theme }) => theme.colors.secondary};
+
+	margin: 0;
+	position: absolute;
+	place-self: center;
+	bottom: 0;
+	top: 0;
+	z-index: 5;
+
+	width: 100%;
+	text-align: center;
+
+	background: radial-gradient(
+		circle,
+		rgba(35, 31, 32, 0.75) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
+
+	@media screen and (max-width: 800px) {
+		font-size: 2rem;
+	}
+`;
+
 export const TagLineSection = styled.div`
 	height: 700px;
 	margin-top: -100px;

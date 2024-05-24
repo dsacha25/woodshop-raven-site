@@ -1,7 +1,7 @@
 'use client';
 
 import SectionTitle from '@/components/titles/section-title';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
 	ContactForm,
 	ContactPageContainer,
@@ -13,18 +13,17 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import schema from '../../objects/contact/schema';
 import FormTextArea from '@/components/inputs/form-text-area';
 import { sendEmail } from '@/utils/send-email';
-
-export interface ContactFormData {
-	name: string;
-	email: string;
-	description: string;
-}
+import SelectBox from '@/components/inputs/select-box';
+import { ContactFormData, SelectBoxOptions } from './types';
 
 const Contact = () => {
 	const {
 		register,
 		reset,
 		watch,
+		setValue,
+		getValues,
+		resetField,
 		formState: { errors },
 		handleSubmit,
 	} = useForm<ContactFormData>({
@@ -32,8 +31,22 @@ const Contact = () => {
 	});
 
 	const onSubmit: SubmitHandler<ContactFormData> = (data) => {
+		console.log('FORM DATA: ', data);
+
 		sendEmail(data);
 		reset();
+		setInterest(null);
+	};
+
+	const [interest, setInterest] = useState<SelectBoxOptions | null>(null);
+
+	const handleInterestChange = (value: SelectBoxOptions | null) => {
+		setInterest(value);
+		if (value) {
+			setValue('interest', value.toLocaleLowerCase().replaceAll('_', ' '));
+		} else {
+			resetField('interest');
+		}
 	};
 
 	return (
@@ -53,6 +66,15 @@ const Contact = () => {
 					hasData={!!watch('email')}
 					label="Email*"
 					error={errors.email}
+					required
+				/>
+
+				<SelectBox
+					{...register('interest')}
+					value={interest?.toString()}
+					onValueChange={handleInterestChange}
+					error={errors.interest}
+					label="Select Interests*"
 					required
 				/>
 

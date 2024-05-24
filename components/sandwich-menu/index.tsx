@@ -117,6 +117,13 @@ const MobileMenu = (props: Props) => {
 						<MenuLinkSmall
 							onClick={handleCloseMenu}
 							active={false}
+							href="/shop/charcuterie"
+						>
+							Charcuterie
+						</MenuLinkSmall>
+						<MenuLinkSmall
+							onClick={handleCloseMenu}
+							active={false}
 							href="/shop/pipes"
 						>
 							Pipes

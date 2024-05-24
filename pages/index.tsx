@@ -1,5 +1,6 @@
 import { CenterFadeDivider } from '@/components/dividers/styles';
 import {
+	BrandName,
 	HeroImagesDisplay,
 	HeroSection,
 	LogoIcon,
@@ -24,7 +25,7 @@ import ServicesList from '@/components/services-list';
 import HorizontalImageDisplay, {
 	ImageDisplayProps,
 } from '@/components/horz-image-display';
-import { Metadata } from 'next';
+
 import { ImagesGradient } from '@/components/portfolio/portfolio-display/styles';
 /* 
 type ParamProps = {
@@ -60,6 +61,7 @@ export default function Home() {
 		<>
 			<HeroSection>
 				<HeroImagesDisplay>
+					<BrandName>Woodshop Raven</BrandName>
 					<CenterFadeDivider marginY="12px" />
 					<HorizontalImageDisplay images={images} height="640px" />
 					<MobileHeroWrapper>
