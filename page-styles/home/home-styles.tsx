@@ -15,6 +15,7 @@ export const BrandName = styled.h1`
 	text-transform: uppercase;
 	letter-spacing: 0.25rem;
 	font-weight: 400;
+	height: min-content;
 
 	color: ${({ theme }) => theme.colors.secondary};
 

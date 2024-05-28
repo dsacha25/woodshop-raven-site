@@ -11,8 +11,6 @@ import _ from 'lodash';
 import { useParams } from 'next/navigation';
 import React from 'react';
 
-type Props = {};
-
 const ProductCategoryPage = () => {
 	const params = useParams<{ category: string }>();
 

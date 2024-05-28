@@ -1,25 +1,83 @@
 import React from 'react';
-import { ItemText, ShopDetails, ShopItemDisplayContainer } from './styles';
-import SectionTitle from '@/components/titles/section-title';
+import {
+	BuyButton,
+	ContactButton,
+	ItemText,
+	ShopButtonsContainer,
+	ShopDescriptionContainer,
+	ShopIcon,
+	ShopItemDisplayContainer,
+} from './styles';
 import { ShopItemProps } from '@/objects/shop/shop-items-list';
-import Image from 'next/image';
-import { SolidButton } from '@/components/buttons/styles';
 import { useRouter } from 'next/navigation';
+import {
+	Annotation,
+	ServiceItemPhotoWrapper,
+	ServicePhoto,
+	Tagline,
+	TaglineContainer,
+	TaglineWrapper,
+} from '@/page-styles/services/styles';
+import { ImagesGradient } from '@/components/portfolio/portfolio-display/styles';
+import { CenterFadeDivider } from '@/components/dividers/styles';
+import { GradientDown } from '@/components/gradients/styles';
+import { Paragraph } from '@/components/text/styles';
+import shopIcons from '@/objects/shop/shop-icons-list';
 
 const ShopItemDisplay = (props: ShopItemProps) => {
 	const router = useRouter();
 
 	return (
-		<ShopItemDisplayContainer>
-			<Image src={props.src} alt="" width={400} height={400} />
-			<ShopDetails>
-				<ItemText>Price: ${props.price}.00</ItemText>
-				<ItemText>Stock: {props.stock}</ItemText>
-				<SolidButton onClick={() => router.push('/contact')}>
-					Get A Quote
-				</SolidButton>
-			</ShopDetails>
-		</ShopItemDisplayContainer>
+		<>
+			<ShopItemDisplayContainer>
+				<ServiceItemPhotoWrapper>
+					<ImagesGradient />
+					<ServicePhoto src={props.src} alt={props.name} />
+				</ServiceItemPhotoWrapper>
+				<ShopDescriptionContainer>
+					<ShopIcon src={shopIcons[props.category[0]]} alt="" />
+					<Paragraph>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis
+						hendrerit risus. Vestibulum in pulvinar risus, a egestas velit.
+						Aenean eu ipsum posuere, malesuada ante eget, luctus lacus.
+					</Paragraph>
+					<ItemText>
+						Price:
+						<span>
+							${props.price == 0 ? 'Made to order' : `${props.price}.00`}
+						</span>
+					</ItemText>
+					<ItemText>
+						Stock:
+						<span>
+							{props.stock == 0 ? 'Commission available' : props.stock}
+						</span>
+					</ItemText>
+					<ShopButtonsContainer>
+						{props.stock != 0 && (
+							<BuyButton
+								onClick={() => router.push(`/contact/${props.category[0]}`)}
+							>
+								Buy
+							</BuyButton>
+						)}
+						<ContactButton
+							onClick={() => router.push(`/contact/${props.category[0]}`)}
+						>
+							Contact Me
+						</ContactButton>
+					</ShopButtonsContainer>
+				</ShopDescriptionContainer>
+			</ShopItemDisplayContainer>
+			<CenterFadeDivider strokeWidth="3px" marginY="0px" />
+			<TaglineWrapper>
+				<TaglineContainer>
+					<Tagline>Handmade made for you.*</Tagline>
+					<Annotation>*Limited stock available on select items</Annotation>
+				</TaglineContainer>
+				<GradientDown />
+			</TaglineWrapper>
+		</>
 	);
 };
 

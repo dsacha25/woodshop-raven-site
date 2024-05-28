@@ -39,7 +39,7 @@ export const SelectDropDownContainer = styled.select`
 	overflow: scroll;
 	height: 50px;
 	opacity: 0;
-	z-index: -1;
+	z-index: 0;
 	position: absolute;
 	top: 0;
 	padding-left: 15px;

@@ -15,7 +15,7 @@ import {
 	SelectOption,
 } from './styles';
 import downArrow from '@/public/images/icons/down_arrow.svg';
-import { SelectBoxOptions } from '@/pages/contact/types';
+import { SelectBoxOptions } from '@/types/contact/types';
 import getEnumKeys from '@/utils/enums/get-enum-keys';
 import { FieldError } from 'react-hook-form';
 
@@ -55,7 +55,7 @@ const SelectBox = forwardRef<HTMLInputElement, SelectInputProps>(
 					ref={ref}
 					hasData={interest !== null}
 					required={props.required}
-					disabled
+					readOnly
 				/>
 				<SelectButton onClick={handleOpenSelect} type="button">
 					<DownArrowIcon src={downArrow} alt="Open selection box" />

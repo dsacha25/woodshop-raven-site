@@ -1,4 +1,4 @@
-import { ContactFormData, SelectBoxOptions } from '@/pages/contact/types';
+import { ContactFormData, SelectBoxOptions } from '@/types/contact/types';
 import getEnumKeys from '@/utils/enums/get-enum-keys';
 import * as yup from 'yup';
 

@@ -9,6 +9,13 @@ export const ShopPageContainer = styled.div`
 	padding: 0 10vw;
 `;
 
+export const ProductPageContainer = styled.div`
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 200px;
+`;
+
 export const ShopContentWrapper = styled.div`
 	display: grid;
 	grid-template-columns: 1fr auto;

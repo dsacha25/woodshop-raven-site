@@ -14,7 +14,8 @@ import schema from '../../objects/contact/schema';
 import FormTextArea from '@/components/inputs/form-text-area';
 import { sendEmail } from '@/utils/send-email';
 import SelectBox from '@/components/inputs/select-box';
-import { ContactFormData, SelectBoxOptions } from './types';
+import { ContactFormData, SelectBoxOptions } from '@/types/contact/types';
+import { useParams } from 'next/navigation';
 
 const Contact = () => {
 	const {
@@ -30,9 +31,16 @@ const Contact = () => {
 		resolver: yupResolver(schema),
 	});
 
-	const onSubmit: SubmitHandler<ContactFormData> = (data) => {
-		console.log('FORM DATA: ', data);
+	const params = useParams<{ contact: string[] }>();
 
+	useEffect(() => {
+		if (params && params.contact.length > 1) {
+			setValue('interest', params.contact[1]);
+			setInterest(params.contact[1].toUpperCase() as SelectBoxOptions);
+		}
+	}, [params]);
+
+	const onSubmit: SubmitHandler<ContactFormData> = (data) => {
 		sendEmail(data);
 		reset();
 		setInterest(null);

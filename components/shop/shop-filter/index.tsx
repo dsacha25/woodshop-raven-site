@@ -17,6 +17,7 @@ export type ShopFilterProps = {
 const allFilters: string[] = [
 	'boxes',
 	'incense',
+	'charcuterie',
 	'pipes',
 	'games',
 	'kink',
@@ -46,13 +47,13 @@ const ShopFilter = (props: ShopFilterProps) => {
 			<FilterText>filters:</FilterText>
 			<FilterDivider />
 			<FiltersContainer>
-				{allFilters.map((filt, i) => (
+				{allFilters.map((category, i) => (
 					<Checkbox
-						label={filt}
-						checked={filters.includes(filt)}
-						name={filt}
-						id={filt}
-						onChange={() => handleSetFilters(filt)}
+						label={category}
+						checked={filters.includes(category)}
+						name={category}
+						id={category}
+						onChange={() => handleSetFilters(category)}
 						key={i}
 					/>
 				))}

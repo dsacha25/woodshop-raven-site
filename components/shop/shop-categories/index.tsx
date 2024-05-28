@@ -11,6 +11,7 @@ const ShopCategories = () => {
 	const allFilters: string[] = [
 		'boxes',
 		'incense',
+		'charcuterie',
 		'pipes',
 		'games',
 		'kink',

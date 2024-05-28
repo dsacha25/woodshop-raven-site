@@ -1,4 +1,7 @@
-import { ShopPageContainer } from '@/page-styles/shop/styles';
+import {
+	ProductPageContainer,
+	ShopPageContainer,
+} from '@/page-styles/shop/styles';
 import SectionTitle from '@/components/titles/section-title';
 import React from 'react';
 import { useParams } from 'next/navigation';
@@ -15,10 +18,10 @@ const ProductItemPage = () => {
 	)!!;
 
 	return (
-		<ShopPageContainer>
+		<ProductPageContainer>
 			<SectionTitle title={params.id.replaceAll('-', ' ')} />
 			<ShopItemDisplay {...shopItem} />
-		</ShopPageContainer>
+		</ProductPageContainer>
 	);
 };
 

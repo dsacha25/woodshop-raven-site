@@ -61,7 +61,7 @@ export default function Home() {
 		<>
 			<HeroSection>
 				<HeroImagesDisplay>
-					<BrandName>Woodshop Raven</BrandName>
+					{/* <BrandName>Woodshop Raven</BrandName> */}
 					<CenterFadeDivider marginY="12px" />
 					<HorizontalImageDisplay images={images} height="640px" />
 					<MobileHeroWrapper>

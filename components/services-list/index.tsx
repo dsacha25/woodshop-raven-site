@@ -43,7 +43,7 @@ const ServicesList = () => {
 		{
 			title: 'Wood Burning',
 			actionText: 'Contact',
-			url: '/contact',
+			url: '/contact/woodburning',
 			src: laraBox,
 			alt: 'Wood Burning',
 		},
