@@ -10,7 +10,7 @@ import {
 } from './styles';
 import { Description } from '@/page-styles/about/styles';
 import { useRouter } from 'next/navigation';
-import Testimony from '../../testimony';
+import Testimonial from '../../testimony';
 import { CenterFadeDivider } from '../../dividers/styles';
 import { PortfolioItemProps } from '@/objects/portfolio/portfolio-items-list';
 
@@ -34,7 +34,7 @@ const PortfolioDisplay = ({
 			<PortfolioContentContainer>
 				<CenterFadeDivider />
 				<Description>{description}</Description>
-				<Testimony quote={quote} />
+				<Testimonial quote={quote} />
 				<PortfolioButton
 					onClick={() => router.push('https://www.etsy.com/shop/WoodshopRaven')}
 				>

@@ -16,6 +16,14 @@ import david_01 from '@/public/images/branding/me_01.webp';
 import david_02 from '@/public/images/branding/me_02.webp';
 import david_03 from '@/public/images/branding/me_03.webp';
 import { RightFade } from '@/components/dividers/styles';
+import { Metadata } from 'next';
+import { Head } from 'next/document';
+
+export const metadat: Metadata = {
+	title: {
+		absolute: 'About',
+	},
+};
 
 const About = () => {
 	const images: ImageDisplayProps[] = [

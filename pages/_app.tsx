@@ -9,6 +9,7 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 import localFont from 'next/font/local';
 import emotionIsPropValid from '@emotion/is-prop-valid';
+import { Metadata } from 'next';
 
 const theme: DefaultTheme = {
 	colors: {
@@ -23,6 +24,7 @@ const theme: DefaultTheme = {
 /* 
 const kalmansk = localFont({ src: './Kalmansk-Regular.otf' });
  */
+
 export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<StyleSheetManager shouldForwardProp={(prop) => emotionIsPropValid(prop)}>

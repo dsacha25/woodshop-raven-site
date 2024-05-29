@@ -35,22 +35,22 @@ const ServicesList = () => {
 	const services: ServiceItemProps[] = [
 		{
 			title: 'Woodworking',
-			actionText: 'View Work',
+			actionText: 'View More',
 			url: '/portfolio',
 			src: chessSet,
 			alt: 'Chess Set',
 		},
 		{
-			title: 'Wood Burning',
-			actionText: 'Contact',
+			title: 'Woodburning',
+			actionText: 'View More',
 			url: '/contact/woodburning',
 			src: laraBox,
 			alt: 'Wood Burning',
 		},
 		{
-			title: 'Lobotomies',
+			title: 'Kink',
 			actionText: 'View More',
-			url: '/services/lobotomies',
+			url: '/services/kink',
 			src: paddle,
 			alt: 'Paddles',
 		},

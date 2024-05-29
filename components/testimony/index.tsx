@@ -2,31 +2,24 @@ import React from 'react';
 import {
 	AuthorText,
 	TestimonialPhoto,
-	TestimonyContainer,
-	TestimonyText,
-	TestimonyWrapper,
+	TestimonialContainer,
+	TestimonialText,
+	TestimonialWrapper,
 } from './styles';
 import { RavenBackgroundImage } from '@/page-styles/home/home-styles';
-import { StaticImageData } from 'next/image';
+import TestimonialProps from '@/types/testimonials/types';
 
-export type TestimonyProps = {
-	photo?: StaticImageData;
-	quote: string;
-	author?: string;
-	height?: string;
-};
-
-const Testimony = ({ photo, quote, author, height }: TestimonyProps) => {
+const Testimonial = ({ photo, quote, author, height }: TestimonialProps) => {
 	return (
-		<TestimonyWrapper height={height}>
+		<TestimonialWrapper height={height}>
 			{photo && <TestimonialPhoto src={photo} alt="" />}
-			<TestimonyContainer>
-				<TestimonyText>{quote}</TestimonyText>
+			<TestimonialContainer>
+				<TestimonialText>{quote}</TestimonialText>
 				<AuthorText>{author}</AuthorText>
-			</TestimonyContainer>
+			</TestimonialContainer>
 			<RavenBackgroundImage reverse={true} />
-		</TestimonyWrapper>
+		</TestimonialWrapper>
 	);
 };
 
-export default Testimony;
+export default Testimonial;

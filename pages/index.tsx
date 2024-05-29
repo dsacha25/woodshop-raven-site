@@ -27,23 +27,7 @@ import HorizontalImageDisplay, {
 } from '@/components/horz-image-display';
 
 import { ImagesGradient } from '@/components/portfolio/portfolio-display/styles';
-/* 
-type ParamProps = {
-	params: { id: string };
-};
 
-export async function generateStaticParams({
-	params,
-}: ParamProps): Promise<Metadata> {
-	const id = params.id;
-
-	const shop = await fetch('http://localhost:3000/shop').then((res) =>
-		res.json()
-	);
-
-	//
-}
- */
 export default function Home() {
 	const images: ImageDisplayProps[] = [
 		{ src: incenseBurner, alt: 'Incense Burner' },

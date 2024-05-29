@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { OutlineButton } from '../buttons/styles';
 import Link from 'next/link';
 
-interface ServiceProps {
+interface ServiceContentProps {
 	index: number;
 }
 
@@ -27,7 +27,7 @@ export const ServiceItemContainer = styled.div`
 	flex-direction: column;
 `;
 
-export const ServiceItemContentWrapper = styled.div<ServiceProps>`
+export const ServiceItemContentWrapper = styled.div<ServiceContentProps>`
 	display: flex;
 	flex-direction: ${({ index }) => (index % 2 ? 'row-reverse' : 'row')};
 	width: 100%;

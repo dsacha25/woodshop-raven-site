@@ -3,7 +3,7 @@ import { ServicesPageContainer } from '@/page-styles/services/styles';
 import SectionTitle from '@/components/titles/section-title';
 import ServicesList from '@/components/services-list';
 
-const Services = () => {
+const ServicesPage = () => {
 	return (
 		<ServicesPageContainer>
 			<SectionTitle title="Services" />
@@ -12,4 +12,4 @@ const Services = () => {
 	);
 };
 
-export default Services;
+export default ServicesPage;

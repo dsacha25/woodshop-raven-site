@@ -5,7 +5,7 @@ export interface TestimonyStyles {
 	height?: string;
 }
 
-export const TestimonyWrapper = styled.div<TestimonyStyles>`
+export const TestimonialWrapper = styled.div<TestimonyStyles>`
 	display: flex;
 	width: 100%;
 	height: ${({ height }) => (height ? height : '300px')};
@@ -28,7 +28,7 @@ export const TestimonyWrapper = styled.div<TestimonyStyles>`
 	}
 `;
 
-export const TestimonyContainer = styled.div`
+export const TestimonialContainer = styled.div`
 	display: flex;
 	width: 100%;
 	height: inherit;
@@ -42,7 +42,7 @@ export const TestimonyContainer = styled.div`
 	overflow: hidden;
 `;
 
-export const TestimonyText = styled.p`
+export const TestimonialText = styled.p`
 	font-family: kalmansk;
 	font-size: 3rem;
 	font-weight: 400;

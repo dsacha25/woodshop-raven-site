@@ -1,6 +1,19 @@
+import { Metadata } from 'next';
 import type { DocumentContext, DocumentInitialProps } from 'next/document';
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
+
+export const metadata: Metadata = {
+	title: {
+		default: 'Woodshop Raven',
+		template: '%s | Woodshop Raven',
+	},
+	description:
+		'Custom Wood Crafts & Woodburning. Design your dream piece or explore our creations.',
+	twitter: {
+		card: 'summary_large_image',
+	},
+};
 
 export default class MyDocument extends Document {
 	static async getInitialProps(
@@ -36,10 +49,27 @@ export default class MyDocument extends Document {
 		return (
 			<Html lang="en">
 				<Head>
-					<title>Woodshop Raven</title>
+					<title>Woodshop Raven: Custom Wood Crafts & Woodburning</title>
 					<meta
+						property="og:title"
+						content="Woodshop Raven: Custom Wood Crafts & Woodburning"
+						key="title"
+					/>
+					<meta
+						property="og:description"
 						name="description"
-						content="Bespoke, handmade wood crafts, jewelry, illustrations & more"
+						content="Custom Wood Crafts & Woodburning. Design your dream piece or explore our creations."
+						key="description"
+					/>
+					<meta property="og:image" content="/public/opengraph-image.png" />
+					<meta property="og:image:png" content="/public/opengraph-image.png" />
+					<meta
+						property="og:image:width"
+						content="/public/opengraph-image.png"
+					/>
+					<meta
+						property="og:image:height"
+						content="/public/opengraph-image.png"
 					/>
 					<link rel="icon" href="/favicon.ico" />
 					<link rel="preconnect" href="https://fonts.googleapis.com" />
