@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-	AddToCartIcon,
 	DetailsContainer,
 	HorizontalDivider,
 	ItemInfoContainer,
@@ -12,26 +11,12 @@ import {
 	ShopItemImageContainer,
 	VerticalDivider,
 } from './styles';
-import { IconButton } from '../../buttons/styles';
 
 import arrowRight from '@/public/images/icons/arrow-right.svg';
 import { ShopItemProps } from '@/objects/shop/shop-items-list';
-import { useParams, useRouter } from 'next/navigation';
+import IconLink from '@/components/buttons/icon-link/icon-link';
 
-const ShopItem = ({
-	src,
-	name,
-	category,
-	url,
-	price,
-	stock,
-}: ShopItemProps) => {
-	const router = useRouter();
-
-	const handleRoute = (url: string) => {
-		router.push(url);
-	};
-
+const ShopItem = ({ src, name, url, price, stock }: ShopItemProps) => {
 	return (
 		<ShopItemContainer>
 			<ShopItemImageContainer>
@@ -46,9 +31,7 @@ const ShopItem = ({
 						<ItemStatus> {stock > 0 ? stock : 'sold out'}</ItemStatus>
 					</ItemStatusContainer>
 					<VerticalDivider />
-					<IconButton onClick={() => handleRoute(`/shop${url}`)}>
-						<AddToCartIcon src={arrowRight} alt="Add to addToCart" />
-					</IconButton>
+					<IconLink url={`/shop${url}`} icon={arrowRight} />
 				</ItemInfoContainer>
 			</DetailsContainer>
 		</ShopItemContainer>

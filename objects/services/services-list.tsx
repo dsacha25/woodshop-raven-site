@@ -17,6 +17,7 @@ export type ServiceProps = {
 	image: ImageProps;
 	icon: StaticImageData;
 	tagline: TaglineProps;
+	linkText: string;
 	description: string;
 	testimonials: TestimonialProps[];
 };
@@ -31,11 +32,12 @@ const servicesList: { [service: string]: ServiceProps } = {
 		},
 		icon: woodworkingIcon,
 		tagline: {
-			tagline: 'I will beat the fucking shit out of you for money.*',
-			annotation: '*results may vary',
+			tagline: 'Handmade Woodworking, Made to Order',
+			annotation: '',
 		},
+		linkText: 'View Work',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis hendrerit risus. Vestibulum in pulvinar risus, a egestas velit. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus. Sed condimentum tortor eu nisl vestibulum, euismod venenatis iaculis. Pellentesque massa nisi, placerat quis faucibus in, bibendum ut sapien. Sed eget arcu augue. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus.',
+			'Breathe new life into your home with custom chess sets, pipes, keepsake boxes, and more. Our free consultations allow us to discuss your vision, recommend materials and styles to fit your space, and bring your dream project to life. ',
 		testimonials: [],
 	},
 	woodburning: {
@@ -47,11 +49,12 @@ const servicesList: { [service: string]: ServiceProps } = {
 		},
 		icon: woodburningIcon,
 		tagline: {
-			tagline: 'I will beat the fucking shit out of you for money.*',
-			annotation: '*results may vary',
+			tagline: 'Unleash the Timeless Beauty of Woodburning.*',
+			annotation: '*contact for estimates',
 		},
+		linkText: 'Get A Quote',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis hendrerit risus. Vestibulum in pulvinar risus, a egestas velit. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus. Sed condimentum tortor eu nisl vestibulum, euismod venenatis iaculis. Pellentesque massa nisi, placerat quis faucibus in, bibendum ut sapien. Sed eget arcu augue. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus.',
+			'We take ordinary wood and transform it into one-of-a-kind creations: custom designs, logos, and artwork that reflect your unique style. From custom illustrations to graphics, our woodburning services allow you to stand out from the ordinary and add a touch of personalized beauty to any piece.',
 		testimonials: [
 			{
 				photo: dude_01,
@@ -69,16 +72,18 @@ const servicesList: { [service: string]: ServiceProps } = {
 		},
 		icon: kinkIcon,
 		tagline: {
-			tagline: 'I will beat the fucking shit out of you for money.*',
-			annotation: '*results may vary',
+			tagline: 'Handcrafted Alternative Goods & Creations',
+			annotation: '',
 		},
+		linkText: 'Get A Quote',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis hendrerit risus. Vestibulum in pulvinar risus, a egestas velit. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus. Sed condimentum tortor eu nisl vestibulum, euismod venenatis iaculis. Pellentesque massa nisi, placerat quis faucibus in, bibendum ut sapien. Sed eget arcu augue. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus.',
+			'Explore our collection of unique paddles, floggers, and more. We also offer custom designs to bring your vision to life, from personalized accessories to statement pieces that reflect your individuality.',
 		testimonials: [
 			{
 				photo: dude_01,
-				quote: '“I can’t feel my face anymore and I’ve never been happier!”',
-				author: '—Some Fucking Asshole',
+				quote:
+					'“These paddles are great. I can’t feel my face anymore and I’ve never been happier!”',
+				author: '—Degenerate',
 			},
 			{
 				photo: dude_02,

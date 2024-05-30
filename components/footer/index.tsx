@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import {
 	ContactInfoContainer,
@@ -10,7 +12,7 @@ import {
 } from './styles';
 import { GradientUp } from '../gradients/styles';
 import { CenterFadeDivider } from '../dividers/styles';
-import { RavenBackgroundImage } from '@/page-styles/home/home-styles';
+import { RavenBackgroundImage } from '@/app/styles';
 
 const Footer = () => {
 	return (

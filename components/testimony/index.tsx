@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import {
 	AuthorText,
@@ -6,8 +7,9 @@ import {
 	TestimonialText,
 	TestimonialWrapper,
 } from './styles';
-import { RavenBackgroundImage } from '@/page-styles/home/home-styles';
+
 import TestimonialProps from '@/types/testimonials/types';
+import { RavenBackgroundImage } from '@/app/styles';
 
 const Testimonial = ({ photo, quote, author, height }: TestimonialProps) => {
 	return (

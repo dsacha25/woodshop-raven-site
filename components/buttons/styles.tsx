@@ -1,19 +1,20 @@
 import styled, { css } from 'styled-components';
 
 interface ButtonProps {
+	width?: string;
 	margin?: string;
 	fontSize?: string;
 }
 
 const SharedButtonStyles = css<ButtonProps>`
 	height: 80px;
-	width: 24vw;
+	width: ${({ width }) => (width ? width : '24vw')};
 	outline: none;
 
 	border-radius: 20px;
 	text-transform: uppercase;
 
-	font-family: Michroma;
+	font-family: inherit;
 
 	background-position: center;
 	transition: background 0.6s;

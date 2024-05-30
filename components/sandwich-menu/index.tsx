@@ -16,7 +16,6 @@ import {
 	SideMenuContainer,
 	TopLine,
 } from './styles';
-import { useRouter } from 'next/router';
 
 import line from '../../public/images/icons/Hamburger_Line.png';
 import closeLeft from '../../public/images/icons/CloseLeft.png';
@@ -25,11 +24,12 @@ import { IconButton } from '../buttons/styles';
 import { AddToCartIcon } from '../shop/shop-item/styles';
 
 import addIcon from '@/public/images/icons/add_icon_white.svg';
+import { usePathname } from 'next/navigation';
 
 type Props = {};
 
 const MobileMenu = (props: Props) => {
-	const { pathname } = useRouter();
+	const pathname = usePathname();
 
 	const [open, setOpen] = useState(false);
 	const [dropDownOpen, setDropDownOpen] = useState(false);

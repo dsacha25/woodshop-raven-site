@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { CenterFadeDivider } from '../dividers/styles';
 import { SectionTitleContainer, SectTitle } from './styles';

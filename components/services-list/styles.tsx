@@ -54,7 +54,7 @@ export const ActionContainer = styled.div`
 `;
 
 export const OutlineActionButton = styled(OutlineButton)`
-	width: 70%;
+	width: ${({ width }) => (width ? width : '70%')};
 
 	@media screen and (max-width: 800px) {
 		height: 70px;

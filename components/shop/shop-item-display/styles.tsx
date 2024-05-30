@@ -1,3 +1,4 @@
+'use client';
 import { OutlineButton, SolidButton } from '@/components/buttons/styles';
 import Image from 'next/image';
 import styled from 'styled-components';

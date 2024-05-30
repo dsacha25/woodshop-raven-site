@@ -2,25 +2,23 @@ import React from 'react';
 import {
 	ImageGrid,
 	ImagesGradient,
-	PortfolioButton,
 	PortfolioContentContainer,
 	PortfolioDisplayContainer,
 	PortfolioImage,
 	PortfolioImageWrapper,
 } from './styles';
-import { Description } from '@/page-styles/about/styles';
-import { useRouter } from 'next/navigation';
+
 import Testimonial from '../../testimony';
 import { CenterFadeDivider } from '../../dividers/styles';
 import { PortfolioItemProps } from '@/objects/portfolio/portfolio-items-list';
+import { Description } from '@/components/sharedstyles';
+import PortfolioLink from '@/components/buttons/portfolio-link/portfolio-link';
 
 const PortfolioDisplay = ({
 	images,
 	quote,
 	description,
 }: Pick<PortfolioItemProps, 'images' | 'quote' | 'description'>) => {
-	const router = useRouter();
-
 	return (
 		<PortfolioDisplayContainer>
 			<ImageGrid>
@@ -35,11 +33,10 @@ const PortfolioDisplay = ({
 				<CenterFadeDivider />
 				<Description>{description}</Description>
 				<Testimonial quote={quote} />
-				<PortfolioButton
-					onClick={() => router.push('https://www.etsy.com/shop/WoodshopRaven')}
-				>
-					View On Etsy
-				</PortfolioButton>
+				<PortfolioLink
+					url="https://www.etsy.com/shop/WoodshopRaven"
+					text="View On Etsy"
+				/>
 			</PortfolioContentContainer>
 		</PortfolioDisplayContainer>
 	);

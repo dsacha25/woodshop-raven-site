@@ -1,14 +1,16 @@
+'use client';
+
 import React from 'react';
 import { CartIcon, PageLink, HomeLink, Nav, LinksContainer } from './styles';
 import logo from './WR_logo_transparent.png';
 
 import cart from '@/public/images/icons/cart-outline.svg';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 import MobileMenu from '../sandwich-menu';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
-	const { pathname } = useRouter();
+	const pathname = usePathname();
 
 	return (
 		<Nav>

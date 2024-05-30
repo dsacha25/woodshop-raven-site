@@ -74,7 +74,7 @@ const shopItemsList: ShopItemProps[] = [
 		category: ['games', 'made-to-order', 'woodburning'],
 		url: '/games/chess-set',
 		stock: 1,
-		price: 0,
+		price: 2000,
 	},
 	{
 		src: tarotBox,

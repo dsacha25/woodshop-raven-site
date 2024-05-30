@@ -1,3 +1,5 @@
+'use client';
+
 import styled, { css } from 'styled-components';
 
 const primary = 'rgba(225, 193, 110, 1)';

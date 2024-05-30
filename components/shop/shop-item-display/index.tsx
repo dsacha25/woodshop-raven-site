@@ -10,6 +10,12 @@ import {
 } from './styles';
 import { ShopItemProps } from '@/objects/shop/shop-items-list';
 import { useRouter } from 'next/navigation';
+
+import { ImagesGradient } from '@/components/portfolio/portfolio-display/styles';
+import { CenterFadeDivider } from '@/components/dividers/styles';
+import { GradientDown } from '@/components/gradients/styles';
+import { Paragraph } from '@/components/text/styles';
+import shopIcons from '@/objects/shop/shop-icons-list';
 import {
 	Annotation,
 	ServiceItemPhotoWrapper,
@@ -17,16 +23,11 @@ import {
 	Tagline,
 	TaglineContainer,
 	TaglineWrapper,
-} from '@/page-styles/services/styles';
-import { ImagesGradient } from '@/components/portfolio/portfolio-display/styles';
-import { CenterFadeDivider } from '@/components/dividers/styles';
-import { GradientDown } from '@/components/gradients/styles';
-import { Paragraph } from '@/components/text/styles';
-import shopIcons from '@/objects/shop/shop-icons-list';
+} from '@/app/services/styles';
+import NavigationButton from '@/components/buttons/navigation-button';
+import SolidLink from '@/components/buttons/solid-link/solid-link';
 
 const ShopItemDisplay = (props: ShopItemProps) => {
-	const router = useRouter();
-
 	return (
 		<>
 			<ShopItemDisplayContainer>
@@ -44,7 +45,7 @@ const ShopItemDisplay = (props: ShopItemProps) => {
 					<ItemText>
 						Price:
 						<span>
-							${props.price == 0 ? 'Made to order' : `${props.price}.00`}
+							{props.price == 0 ? 'Made to order' : `$${props.price}.00`}
 						</span>
 					</ItemText>
 					<ItemText>
@@ -55,17 +56,18 @@ const ShopItemDisplay = (props: ShopItemProps) => {
 					</ItemText>
 					<ShopButtonsContainer>
 						{props.stock != 0 && (
-							<BuyButton
-								onClick={() => router.push(`/contact/${props.category[0]}`)}
-							>
-								Buy
-							</BuyButton>
+							<SolidLink
+								width="100%"
+								url={`/contact/${props.category[0]}`}
+								text="Buy"
+							/>
 						)}
-						<ContactButton
-							onClick={() => router.push(`/contact/${props.category[0]}`)}
-						>
-							Contact Me
-						</ContactButton>
+						<NavigationButton
+							width="100%"
+							fontSize="1.2rem"
+							url={`/contact/${props.category[0]}`}
+							text="Contact Me"
+						/>
 					</ShopButtonsContainer>
 				</ShopDescriptionContainer>
 			</ShopItemDisplayContainer>

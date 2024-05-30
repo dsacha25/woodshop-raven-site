@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import styled from 'styled-components';
 import { SolidButton } from '../../buttons/styles';

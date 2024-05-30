@@ -1,9 +1,9 @@
+'use client';
+
 import React from 'react';
 import { StaticImageData } from 'next/image';
-import { useRouter } from 'next/navigation';
 import {
 	ActionContainer,
-	OutlineActionButton,
 	ServiceItemContainer,
 	ServiceItemContentWrapper,
 	ServiceItemImage,
@@ -13,13 +13,15 @@ import {
 } from './styles';
 
 import { GradientLeft, GradientRight } from '../gradients/styles';
-import { RavenBackgroundImage } from '@/page-styles/home/home-styles';
+import { RavenBackgroundImage } from '@/app/styles';
 import { LeftFade, RightFade } from '../dividers/styles';
 
 import chessSet from '@/public/images/ibanez-chess-set/IbanezChessSet_01.webp';
 import laraBox from '@/public/images/lara-box/LaraBox_03.webp';
 import paddle from '@/public/images/paddles/v1/Paddle-V1_01.webp';
 import { SubTitle } from '../titles/subtitle';
+import NavigationButton from '../buttons/navigation-button';
+import { Metadata } from 'next';
 
 type ServiceItemProps = {
 	title: string;
@@ -29,41 +31,38 @@ type ServiceItemProps = {
 	alt: string;
 };
 
-const ServicesList = () => {
-	const router = useRouter();
+export const services: ServiceItemProps[] = [
+	{
+		title: 'Woodworking',
+		actionText: 'View More',
+		url: '/services/woodworking',
+		src: chessSet,
+		alt: 'Chess Set',
+	},
+	{
+		title: 'Woodburning',
+		actionText: 'View More',
+		url: '/services/woodburning',
+		src: laraBox,
+		alt: 'Wood Burning',
+	},
+	{
+		title: 'Kink',
+		actionText: 'View More',
+		url: '/services/kink',
+		src: paddle,
+		alt: 'Paddles',
+	},
+];
 
-	const services: ServiceItemProps[] = [
-		{
-			title: 'Woodworking',
-			actionText: 'View More',
-			url: '/portfolio',
-			src: chessSet,
-			alt: 'Chess Set',
-		},
-		{
-			title: 'Woodburning',
-			actionText: 'View More',
-			url: '/contact/woodburning',
-			src: laraBox,
-			alt: 'Wood Burning',
-		},
-		{
-			title: 'Kink',
-			actionText: 'View More',
-			url: '/services/kink',
-			src: paddle,
-			alt: 'Paddles',
-		},
-	];
+const ServicesList = () => {
 	return (
 		<ServicesListContainer>
 			{services.map((service, i) => (
 				<ServiceItemContainer key={i}>
 					<ServiceItemContentWrapper index={i}>
 						<ActionContainer>
-							<OutlineActionButton onClick={() => router.push(service.url)}>
-								{service.actionText}
-							</OutlineActionButton>
+							<NavigationButton url={service.url} text={service.actionText} />
 						</ActionContainer>
 						<ServiceItemImageContainer href={service.url}>
 							{i % 2 != 0 ? (

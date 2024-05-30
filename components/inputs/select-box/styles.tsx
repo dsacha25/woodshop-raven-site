@@ -11,7 +11,7 @@ export const SelectBoxContainer = styled.div`
 export const SelectBoxInput = styled(Input)`
 	pointer-events: none;
 	text-transform: capitalize;
-	font-family: Michroma;
+	font-family: inherit;
 `;
 
 export const SelectButton = styled(IconButton)`
@@ -43,13 +43,13 @@ export const SelectDropDownContainer = styled.select`
 	position: absolute;
 	top: 0;
 	padding-left: 15px;
+	font-family: inherit;
 
 	background-color: ${({ theme }) => theme.colors.background};
 `;
 
 export const SelectOption = styled.option`
 	text-transform: capitalize;
-	font-family: Michroma;
 	font-size: 1rem;
 	color: ${({ theme }) => theme.colors.primary};
 `;

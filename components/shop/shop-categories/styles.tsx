@@ -1,5 +1,4 @@
-import { Checkbox } from '@nextui-org/checkbox';
-import { cn } from '@nextui-org/system';
+'use client';
 import Link from 'next/link';
 import styled from 'styled-components';
 
@@ -18,7 +17,6 @@ export const CategoryText = styled.p`
 	letter-spacing: 0.2rem;
 	margin: 0;
 	font-family: kalmansk;
-	/* text-transform: uppercase; */
 `;
 
 export const CategoryDivider = styled.div`
