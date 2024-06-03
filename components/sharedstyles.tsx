@@ -33,6 +33,13 @@ const Description = styled.p`
 	text-align: center;
 	line-height: 1.5;
 	font-size: 1.5rem;
+
+	@media screen and (max-width: 800px) {
+		font-size: 1rem;
+		line-height: 1.4rem;
+		text-align: left;
+		text-indent: 30px;
+	}
 `;
 
 export { Main, Title, Description };

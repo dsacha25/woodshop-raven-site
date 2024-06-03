@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styled, { css } from 'styled-components';
 
 interface ButtonProps {
@@ -10,6 +11,7 @@ const SharedButtonStyles = css<ButtonProps>`
 	height: 80px;
 	width: ${({ width }) => (width ? width : '24vw')};
 	outline: none;
+	padding: 0 30px;
 
 	border-radius: 20px;
 	text-transform: uppercase;
@@ -22,8 +24,9 @@ const SharedButtonStyles = css<ButtonProps>`
 	cursor: pointer;
 
 	@media screen and (max-width: 700px) {
-		width: 90%;
+		width: 100%;
 		font-size: 1.2rem !important;
+		padding: 0 10px;
 	}
 `;
 
@@ -60,6 +63,41 @@ export const OutlineButton = styled.button<ButtonProps>`
 
 export const SolidButton = styled.button<ButtonProps>`
 	${SharedButtonStyles}
+
+	font-size: 1.4rem;
+	color: ${({ theme }) => theme.colors.background};
+	background-color: ${({ theme }) => theme.colors.primary};
+	-webkit-text-stroke: ${({ theme }) => theme.colors.background} 2px;
+	letter-spacing: 0.2rem;
+	border: none;
+
+	background-image: radial-gradient(
+		circle,
+		transparent 0.1%,
+		${({ theme }) => theme.colors.background} 0.15%
+	);
+	background-size: 150000%;
+
+	&:hover {
+		background-color: ${({ theme }) => theme.colors.secondary};
+		-webkit-text-stroke: ${({ theme }) => theme.colors.primary} 2px;
+	}
+
+	&:active {
+		background-color: hsl(43deg, 66%, 66%, 0.32);
+		transition: background 0s;
+		background-size: 100%;
+		transform: scale(0.99);
+	}
+`;
+
+export const ButtonLink = styled(Link)<ButtonProps>`
+	${SharedButtonStyles}
+
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	font-size: 1.4rem;
 	color: ${({ theme }) => theme.colors.background};

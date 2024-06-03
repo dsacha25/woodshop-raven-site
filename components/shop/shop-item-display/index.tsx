@@ -37,11 +37,7 @@ const ShopItemDisplay = (props: ShopItemProps) => {
 				</ServiceItemPhotoWrapper>
 				<ShopDescriptionContainer>
 					<ShopIcon src={shopIcons[props.category[0]]} alt="" />
-					<Paragraph>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis
-						hendrerit risus. Vestibulum in pulvinar risus, a egestas velit.
-						Aenean eu ipsum posuere, malesuada ante eget, luctus lacus.
-					</Paragraph>
+					<Paragraph>{props.description}</Paragraph>
 					<ItemText>
 						Price:
 						<span>
@@ -58,8 +54,9 @@ const ShopItemDisplay = (props: ShopItemProps) => {
 						{props.stock != 0 && (
 							<SolidLink
 								width="100%"
-								url={`/contact/${props.category[0]}`}
+								url={props.productLink}
 								text="Buy"
+								target="_blank"
 							/>
 						)}
 						<NavigationButton
@@ -74,8 +71,8 @@ const ShopItemDisplay = (props: ShopItemProps) => {
 			<CenterFadeDivider strokeWidth="3px" marginY="0px" />
 			<TaglineWrapper>
 				<TaglineContainer>
-					<Tagline>Handmade made for you.*</Tagline>
-					<Annotation>*Limited stock available on select items</Annotation>
+					<Tagline>Handmade for you.</Tagline>
+					<Annotation>Limited stock on select items</Annotation>
 				</TaglineContainer>
 				<GradientDown />
 			</TaglineWrapper>

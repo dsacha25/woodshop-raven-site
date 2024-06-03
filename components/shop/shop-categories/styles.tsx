@@ -40,8 +40,15 @@ export const CategoriesContainer = styled.div`
 
 export const CategoryLink = styled(Link)`
 	text-decoration: underline;
+	min-width: 150px;
 
 	&:hover {
 		color: ${({ theme }) => theme.colors.secondary};
+	}
+`;
+
+export const ClearFilterLink = styled(CategoryLink)`
+	&:hover {
+		text-decoration: line-through;
 	}
 `;

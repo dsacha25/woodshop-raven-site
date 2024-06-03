@@ -22,24 +22,9 @@ import { GradientDown } from '@/components/gradients/styles';
 import Testimonial from '@/components/testimony';
 
 import servicesList from '@/objects/services/services-list';
-import { Metadata } from 'next';
 import SolidLink from '@/components/buttons/solid-link/solid-link';
-/* 
-export function generateMetadata(): Metadata {
-	const params = useParams<{ service: string }>();
+import { SubTitle } from '@/components/titles/subtitle';
 
-	if (!params) return {};
-
-	const { title, image } = servicesList[params.service.toLocaleLowerCase()];
-
-	return {
-		title: title,
-		openGraph: {
-			images: [{ url: image.src.src }],
-		},
-	};
-}
- */
 const ServicePage = ({ params }: { params: { service: string } }) => {
 	const {
 		title,
@@ -78,7 +63,7 @@ const ServicePage = ({ params }: { params: { service: string } }) => {
 			{testimonials.length > 0 && (
 				<TestimonialsContainer>
 					<FullWidthContainer>
-						<Tagline>Testimonials</Tagline>
+						<SubTitle align="start">Testimonials</SubTitle>
 						<LeftFade marginY="0" />
 					</FullWidthContainer>
 					<TestimonyList>

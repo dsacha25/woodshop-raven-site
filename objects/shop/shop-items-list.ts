@@ -15,6 +15,8 @@ export type ShopItemProps = {
 	name: string;
 	category: string[];
 	url: string;
+	productLink: string;
+	description: string;
 	stock: number;
 	price: number;
 };
@@ -25,6 +27,10 @@ const shopItemsList: ShopItemProps[] = [
 		name: 'Walnut Paddle',
 		category: ['kink', 'woodburning', 'made-to-order'],
 		url: '/kink/walnut-paddle',
+		productLink:
+			'https://www.etsy.com/listing/1716720497/handcrafted-walnut-spanking-paddle-w',
+		description:
+			'Handmade walnut paddle with nylon rope handle for impact play or teaching your friends a lesson.',
 		stock: 3,
 		price: 80,
 	},
@@ -33,6 +39,10 @@ const shopItemsList: ShopItemProps[] = [
 		name: 'Incense Burner',
 		category: ['incense', 'woodburning'],
 		url: '/incense/incense-burner',
+		productLink:
+			'https://www.etsy.com/listing/1483067453/handmade-incense-burner-w-custom',
+		description:
+			"Incense burner with optional woodburning illustrations. I'll create an incense burner based whatever inspires you.",
 		stock: 1,
 		price: 20,
 	},
@@ -41,6 +51,10 @@ const shopItemsList: ShopItemProps[] = [
 		name: 'Smoking Pipe',
 		category: ['pipes'],
 		url: '/pipes/smoking-pipe',
+		productLink:
+			'https://www.etsy.com/listing/1716720497/handcrafted-walnut-spanking-paddle-w',
+		description:
+			'Handmade tobacco pipe made from briar wood imported from Sweden.',
 		stock: 0,
 		price: 40,
 	},
@@ -49,6 +63,9 @@ const shopItemsList: ShopItemProps[] = [
 		name: 'Charcuterie Board',
 		category: ['charcuterie'],
 		url: '/charcuterie/charcuterie-board',
+		productLink: '',
+		description:
+			'Round charcuterie board made from walnut and maple with a nylon rope handle.',
 		stock: 0,
 		price: 50,
 	},
@@ -57,6 +74,10 @@ const shopItemsList: ShopItemProps[] = [
 		name: 'Nylon Purple Flogger',
 		category: ['kink'],
 		url: '/kink/nylon-purple-flogger',
+		productLink:
+			'https://www.etsy.com/listing/1711419895/black-purple-nylon-flogger-w-whipped',
+		description:
+			'This flogger is made from black and purple nylon rope with a bamboo handle core.',
 		stock: 1,
 		price: 25,
 	},
@@ -65,6 +86,9 @@ const shopItemsList: ShopItemProps[] = [
 		name: 'Nylon Pride Flogger',
 		category: ['kink'],
 		url: '/kink/nylon-pride-flogger',
+		productLink:
+			'https://www.etsy.com/listing/1711419895/black-purple-nylon-flogger-w-whipped',
+		description: '',
 		stock: 1,
 		price: 25,
 	},
@@ -73,6 +97,10 @@ const shopItemsList: ShopItemProps[] = [
 		name: 'Chess Set',
 		category: ['games', 'made-to-order', 'woodburning'],
 		url: '/games/chess-set',
+		productLink:
+			'https://www.etsy.com/listing/1449258358/handmade-chess-set-w-optional-engravings',
+		description:
+			'This custom chess set was made from Walnut and Curly Maple. The name of client was woodburned onto the boarders. All pieces were made by hand. Contact me for custom chess sets.',
 		stock: 1,
 		price: 2000,
 	},
@@ -81,6 +109,10 @@ const shopItemsList: ShopItemProps[] = [
 		name: 'Tarot Card Box',
 		category: ['boxes', 'woodburning', 'made-to-order'],
 		url: '/boxes/tarot-card-box',
+		productLink:
+			'https://www.etsy.com/listing/1462901115/tarot-box-w-woodburning-illustrations',
+		description:
+			'A tarot card box made from maple with customized illustrations.',
 		stock: 1,
 		price: 0,
 	},
@@ -89,6 +121,9 @@ const shopItemsList: ShopItemProps[] = [
 		name: 'Orchid Box',
 		category: ['boxes', 'woodburning', 'made-to-order'],
 		url: '/boxes/orchid-box',
+		productLink:
+			'https://www.etsy.com/listing/1483073433/keepsake-box-w-lid-and-drawer',
+		description: 'Keepsake box with orchid illustration on top.',
 		stock: 1,
 		price: 0,
 	},

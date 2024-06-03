@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import styled from 'styled-components';
-import { SolidButton } from '../../buttons/styles';
+import { ButtonLink, SolidButton } from '../../buttons/styles';
 
 export const PortfolioDisplayContainer = styled.div`
 	display: flex;
@@ -74,7 +74,8 @@ export const PortfolioContentContainer = styled.div`
 	}
 `;
 
-export const PortfolioButton = styled(SolidButton)`
+export const PortfolioButton = styled(ButtonLink)`
+	height: 80px;
 	min-width: 300px;
 	font-size: 1.2rem;
 

@@ -11,7 +11,9 @@ const ProductItemPage = ({
 }) => {
 	const shopItem = shopItemsList.find(
 		(x) => x.name.replaceAll(' ', '-').toLowerCase() == params.id
-	)!!;
+	);
+
+	if (!shopItem) return;
 
 	return (
 		<ProductPageContainer>

@@ -16,7 +16,7 @@ import arrowRight from '@/public/images/icons/arrow-right.svg';
 import { ShopItemProps } from '@/objects/shop/shop-items-list';
 import IconLink from '@/components/buttons/icon-link/icon-link';
 
-const ShopItem = ({ src, name, url, price, stock }: ShopItemProps) => {
+const ShopItemCard = ({ src, name, url, price, stock }: ShopItemProps) => {
 	return (
 		<ShopItemContainer>
 			<ShopItemImageContainer>
@@ -38,4 +38,4 @@ const ShopItem = ({ src, name, url, price, stock }: ShopItemProps) => {
 	);
 };
 
-export default ShopItem;
+export default ShopItemCard;

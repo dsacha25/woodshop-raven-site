@@ -79,9 +79,10 @@ export const Tagline = styled.h2`
 	font-size: 5rem;
 
 	@media screen and (max-width: 700px) {
-		font-size: 1.8rem;
+		font-size: 2.25rem;
 		text-align: center;
 		max-width: 75%;
+		letter-spacing: 0.125rem;
 	}
 `;
 

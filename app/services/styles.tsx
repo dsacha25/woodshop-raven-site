@@ -56,7 +56,7 @@ export const DescriptionContainer = styled.div`
 	grid-template-rows: 150px 1fr auto 80px;
 	height: 100%;
 	width: 100%;
-	padding: 45px 4.5vw;
+	padding: 60px 8vw;
 	place-items: center;
 	gap: 40px;
 `;
@@ -87,13 +87,13 @@ export const TaglineContainer = styled.div`
 
 export const Tagline = styled.h2`
 	font-size: 3rem;
-	font-weight: 100;
+	font-weight: 400;
 	letter-spacing: 0.25rem;
 	margin: 0;
+	text-align: center;
 
 	@media screen and (max-width: 800px) {
 		font-size: 1.5rem;
-		text-align: center;
 	}
 `;
 

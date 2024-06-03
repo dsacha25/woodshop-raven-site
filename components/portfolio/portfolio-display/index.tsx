@@ -18,7 +18,11 @@ const PortfolioDisplay = ({
 	images,
 	quote,
 	description,
-}: Pick<PortfolioItemProps, 'images' | 'quote' | 'description'>) => {
+	productLink,
+}: Pick<
+	PortfolioItemProps,
+	'images' | 'quote' | 'description' | 'productLink'
+>) => {
 	return (
 		<PortfolioDisplayContainer>
 			<ImageGrid>
@@ -33,10 +37,7 @@ const PortfolioDisplay = ({
 				<CenterFadeDivider />
 				<Description>{description}</Description>
 				<Testimonial quote={quote} />
-				<PortfolioLink
-					url="https://www.etsy.com/shop/WoodshopRaven"
-					text="View On Etsy"
-				/>
+				<PortfolioLink url={productLink} text="View On Etsy" />
 			</PortfolioContentContainer>
 		</PortfolioDisplayContainer>
 	);

@@ -15,7 +15,7 @@ function PortfolioItem({
 	images,
 	title,
 	url,
-}: Omit<PortfolioItemProps, 'quote' | 'description'>) {
+}: Omit<PortfolioItemProps, 'quote' | 'description' | 'productLink'>) {
 	return (
 		<PortfolioItemContainer href={`portfolio/${url}`}>
 			<HorizontalImageDisplay images={images} height="calc(100vw / 6)" />

@@ -47,16 +47,16 @@ const About = () => {
 				</AboutImagesWrapper>
 
 				<Description>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis
-					hendrerit risus. Vestibulum in pulvinar risus, a egestas velit. Aenean
-					eu ipsum posuere, malesuada ante eget, luctus lacus. Sed condimentum
-					tortor eu nisl vestibulum, euismod venenatis nisi iaculis.
-					Pellentesque massa nisi, placerat quis faucibus in, bibendum ut
-					sapien. Sed eget arcu augue. Nunc quam ante, facilisis in eleifend ac,
-					placerat ac metus. Praesent rhoncus nibh consectetur fermentum
-					gravida. Phasellus ullamcorper, mi vitae aliquet venenatis, magna
-					turpis maximus leo, eu iaculis elit ante mattis tellus. Sed vulputate
-					urna a convallis malesuada.
+					From the beaches of Long Beach, California to your home, Woodshop
+					Raven brings the beauty of handcrafted wood into your life. David, the
+					founder, isn't just a woodworker – he's a designer with a passion for
+					creating functional art. A graduate of the College for Creative
+					Studies' Product Design program, David brings his design expertise to
+					every piece he creates. David’s passion for making beautiful pieces
+					shows in his work. Whether it's a handcrafted chessboard for family
+					game nights, a keepsake box to hold precious memories, or a
+					beautifully carved paddle, David's work is driven by a desire to
+					create functional objects that spark joy.
 				</Description>
 			</AboutContainer>
 		</AboutPageContainer>

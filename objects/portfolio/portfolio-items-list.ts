@@ -23,6 +23,7 @@ export type PortfolioItemProps = {
 	images: ImageDisplayProps[];
 	title: string;
 	url: string;
+	productLink: string;
 	description: string;
 	quote: string;
 };
@@ -57,6 +58,8 @@ const portfolioItems: PortfolioItemProps[] = [
 		],
 		title: 'Chess Set & Box',
 		url: 'chess-set',
+		productLink:
+			'https://www.etsy.com/listing/1449258358/handmade-chess-set-w-optional-engravings',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis hendrerit risus. Vestibulum in pulvinar risus, a egestas velit. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus. Sed condimentum tortor eu nisl vestibulum, euismod venenatis nisi iaculis. Pellentesque massa nisi, placerat quis faucibus in, bibendum ut sapien. Sed eget arcu augue.',
 		quote:
@@ -91,6 +94,8 @@ const portfolioItems: PortfolioItemProps[] = [
 		],
 		title: 'Tarot Card Box',
 		url: 'tarot-card-box',
+		productLink:
+			'https://www.etsy.com/listing/1462901115/tarot-box-w-woodburning-illustrations',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis hendrerit risus. Vestibulum in pulvinar risus, a egestas velit. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus. Sed condimentum tortor eu nisl vestibulum, euismod venenatis nisi iaculis. Pellentesque massa nisi, placerat quis faucibus in, bibendum ut sapien. Sed eget arcu augue.',
 		quote: "''Pretty sure this is cursed. I love it.'' —The Devil",
@@ -124,6 +129,8 @@ const portfolioItems: PortfolioItemProps[] = [
 		],
 		title: 'Orchid Keepsake Box',
 		url: 'orchid-keepsake-box',
+		productLink:
+			'https://www.etsy.com/listing/1483073433/keepsake-box-w-lid-and-drawer',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis hendrerit risus. Vestibulum in pulvinar risus, a egestas velit. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus. Sed condimentum tortor eu nisl vestibulum, euismod venenatis nisi iaculis. Pellentesque massa nisi, placerat quis faucibus in, bibendum ut sapien. Sed eget arcu augue.',
 		quote: "''It's a box.'' —Lucifer",
@@ -157,6 +164,8 @@ const portfolioItems: PortfolioItemProps[] = [
 		],
 		title: 'Custom Incense Burner',
 		url: 'incense-burner',
+		productLink:
+			'https://www.etsy.com/listing/1483067453/handmade-incense-burner-w-custom',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis hendrerit risus. Vestibulum in pulvinar risus, a egestas velit. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus. Sed condimentum tortor eu nisl vestibulum, euismod venenatis nisi iaculis. Pellentesque massa nisi, placerat quis faucibus in, bibendum ut sapien. Sed eget arcu augue.',
 		quote: "''This thing is the tits.'' —Merlin",

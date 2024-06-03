@@ -3,7 +3,7 @@ import { StaticImageData } from 'next/image';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 import { IconButton } from '../styles';
-import { AddToCartIcon } from '@/components/shop/shop-item/styles';
+import { AddToCartIcon } from '@/components/shop/shop-item-card/styles';
 
 type IconLinkProps = {
 	url: string;

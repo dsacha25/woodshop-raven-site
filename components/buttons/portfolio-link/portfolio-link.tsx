@@ -1,7 +1,5 @@
-'use client';
-import { PortfolioButton } from '@/components/portfolio/portfolio-display/styles';
-import { useRouter } from 'next/navigation';
 import React from 'react';
+import { PortfolioButton } from '@/components/portfolio/portfolio-display/styles';
 
 type PortfolioLinkProps = {
 	url: string;
@@ -9,9 +7,8 @@ type PortfolioLinkProps = {
 };
 
 const PortfolioLink = (props: PortfolioLinkProps) => {
-	const router = useRouter();
 	return (
-		<PortfolioButton onClick={() => router.push(props.url)}>
+		<PortfolioButton href={props.url} target="_blank" rel="noopener noreferrer">
 			{props.text}
 		</PortfolioButton>
 	);

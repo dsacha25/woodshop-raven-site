@@ -21,7 +21,7 @@ import line from '../../public/images/icons/Hamburger_Line.png';
 import closeLeft from '../../public/images/icons/CloseLeft.png';
 import closeRight from '../../public/images/icons/CloseRight.png';
 import { IconButton } from '../buttons/styles';
-import { AddToCartIcon } from '../shop/shop-item/styles';
+import { AddToCartIcon } from '../shop/shop-item-card/styles';
 
 import addIcon from '@/public/images/icons/add_icon_white.svg';
 import { usePathname } from 'next/navigation';

@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { SolidButton } from '../styles';
+import { ButtonLink, SolidButton } from '../styles';
 import { useRouter } from 'next/navigation';
 
 type SolidLinkProps = {
@@ -8,19 +8,22 @@ type SolidLinkProps = {
 	text: string;
 	width?: string;
 	fontSize?: string;
+	target?: string;
 };
-const SolidLink = ({ url, text, width, fontSize }: SolidLinkProps) => {
+const SolidLink = ({ url, text, width, fontSize, target }: SolidLinkProps) => {
 	const router = useRouter();
 
 	return (
-		<SolidButton
+		<ButtonLink
 			width={width}
 			fontSize={fontSize}
 			margin="0 auto"
-			onClick={() => router.push(url)}
+			href={url}
+			target={target}
+			rel="noopener noreferrer"
 		>
 			{text}
-		</SolidButton>
+		</ButtonLink>
 	);
 };
 

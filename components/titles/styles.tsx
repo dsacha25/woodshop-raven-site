@@ -24,7 +24,7 @@ export const SectTitle = styled.h2`
 	}
 
 	@media (max-width: 900px) {
-		font-size: 2rem;
-		letter-spacing: 0.25rem;
+		font-size: 1.8rem;
+		letter-spacing: 0.2rem;
 	}
 `;

@@ -1,5 +1,5 @@
 import React from 'react';
-import ShopItem from '@/components/shop/shop-item';
+import ShopItemCard from '@/components/shop/shop-item-card';
 import SectionTitle from '@/components/titles/section-title';
 import shopItemsList from '@/objects/shop/shop-items-list';
 import {
@@ -9,6 +9,7 @@ import {
 	ShopPageContainer,
 } from '@/app/shop/styles';
 import _ from 'lodash';
+import ClearFilter from '@/components/shop/clear-filter';
 
 const ProductCategoryPage = ({ params }: { params: { category: string } }) => {
 	const shopItemsByCategory = _.filter(shopItemsList, function (item) {
@@ -21,10 +22,10 @@ const ProductCategoryPage = ({ params }: { params: { category: string } }) => {
 			<ShopContentWrapper>
 				<ShopList>
 					{shopItemsByCategory.map((item, i) => (
-						<ShopItem key={i} {...item} />
+						<ShopItemCard key={i} {...item} />
 					))}
 				</ShopList>
-				<ShopFilterContainer></ShopFilterContainer>
+				<ClearFilter category={params.category} />
 			</ShopContentWrapper>
 		</ShopPageContainer>
 	);

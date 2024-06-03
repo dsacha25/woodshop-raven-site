@@ -8,7 +8,7 @@ import _ from 'lodash';
 const PortfolioItem = ({ params }: { params: { portfolioId: string } }) => {
 	const portfolioItem = _.find(portfolioItems, ['url', params?.portfolioId]);
 
-	if (!portfolioItem || !params) return;
+	if (!portfolioItem) return;
 
 	return (
 		<PortfolioPageContainer>
@@ -17,6 +17,7 @@ const PortfolioItem = ({ params }: { params: { portfolioId: string } }) => {
 				images={portfolioItem.images}
 				quote={portfolioItem.quote}
 				description={portfolioItem.description}
+				productLink={portfolioItem.productLink}
 			/>
 		</PortfolioPageContainer>
 	);
