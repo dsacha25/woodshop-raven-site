@@ -1,6 +1,9 @@
 import { Metadata } from 'next';
 import { ThemeWrapper } from './theme-wrapper';
 import { Michroma } from 'next/font/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
+import firebase, { analytics } from './lib/firebase';
+import { useEffect } from 'react';
 
 export const metadata: Metadata = {
 	title: {
@@ -8,9 +11,13 @@ export const metadata: Metadata = {
 		template: '%s | Woodshop Raven',
 	},
 	description:
-		'Custom Wood Crafts & Woodburning. Design your dream piece or explore our creations.',
+		'Custom woodworking crafts, woodburning, & more made in Long Beach, CA. Design your dream piece or explore our creations.',
 	twitter: {
 		card: 'summary_large_image',
+	},
+	authors: {
+		name: 'Akton LLC',
+		url: 'https://akton.blue',
 	},
 };
 
@@ -25,6 +32,7 @@ export default function RootLayout({
 		<html>
 			<body className={michroma.className}>
 				<ThemeWrapper>{children}</ThemeWrapper>
+				<GoogleAnalytics gaId={process.env.NEXT_PUBLIC_MEASUREMENT_ID!!} />
 			</body>
 		</html>
 	);

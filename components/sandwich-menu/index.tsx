@@ -14,6 +14,7 @@ import {
 	ShopMenuDropDown,
 	ShopMenuTop,
 	SideMenuContainer,
+	SocialMediaContainer,
 	TopLine,
 } from './styles';
 
@@ -25,6 +26,7 @@ import { AddToCartIcon } from '../shop/shop-item-card/styles';
 
 import addIcon from '@/public/images/icons/add_icon_white.svg';
 import { usePathname } from 'next/navigation';
+import { EtsyLink, InstagramLink } from '../footer/styles';
 
 type Props = {};
 
@@ -172,6 +174,10 @@ const MobileMenu = (props: Props) => {
 				>
 					Contact
 				</MenuLink>
+				<SocialMediaContainer>
+					<InstagramLink />
+					<EtsyLink />
+				</SocialMediaContainer>
 			</SideMenuContainer>
 		</MobileMenuContainer>
 	);

@@ -31,7 +31,7 @@ const ShopItemCard = ({ src, name, url, price, stock }: ShopItemProps) => {
 						<ItemStatus> {stock > 0 ? stock : 'sold out'}</ItemStatus>
 					</ItemStatusContainer>
 					<VerticalDivider />
-					<IconLink url={`/shop${url}`} icon={arrowRight} />
+					<IconLink url={`/shop${url}`} icon={arrowRight} itemName={name} />
 				</ItemInfoContainer>
 			</DetailsContainer>
 		</ShopItemContainer>

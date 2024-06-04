@@ -1,9 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styled, { css } from 'styled-components';
-
-import cart from '../../public/images/icons/cart-outline.svg';
-import menu from '../../public/images/icons/cart-outline.svg';
+import Etsy from '@/public/images/icons/Etsy_logo.svg.png';
 
 export const Nav = styled.nav`
 	height: auto;
@@ -90,3 +88,34 @@ export const CartIcon = styled(Image)`
 		display: none;
 	}
 `;
+
+const ELink = styled(Link)`
+	display: flex;
+	width: 80px;
+	height: auto;
+	aspect-ratio: 1;
+
+	border: 5px solid ${({ theme }) => theme.colors.primary};
+	border-radius: 20px;
+
+	@media screen and (max-width: 800px) {
+		display: none;
+	}
+`;
+
+const ELogo = styled(Image)`
+	width: 60px;
+	height: 30px;
+	padding: 2.5px 5px;
+	margin: auto;
+`;
+
+export const EtsyHeaderLink = () => (
+	<ELink
+		href="https://www.etsy.com/shop/WoodshopRaven"
+		target="_blank"
+		rel="noopener noreferrer"
+	>
+		<ELogo src={Etsy} alt="etsy shop link" />
+	</ELink>
+);

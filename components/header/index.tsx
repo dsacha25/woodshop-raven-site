@@ -1,10 +1,15 @@
 'use client';
 
 import React from 'react';
-import { CartIcon, PageLink, HomeLink, Nav, LinksContainer } from './styles';
+import {
+	PageLink,
+	HomeLink,
+	Nav,
+	LinksContainer,
+	EtsyHeaderLink,
+} from './styles';
 import logo from './WR_logo_transparent.png';
 
-import cart from '@/public/images/icons/cart-outline.svg';
 import Link from 'next/link';
 import MobileMenu from '../sandwich-menu';
 import { usePathname } from 'next/navigation';
@@ -34,9 +39,7 @@ const Header = () => {
 					Contact
 				</PageLink>
 			</LinksContainer>
-			<PageLink active={false} href="/shop" className="cart">
-				<CartIcon src={cart} width={90} height={90} alt="link to cart" />
-			</PageLink>
+			<EtsyHeaderLink />
 			<MobileMenu />
 		</Nav>
 	);

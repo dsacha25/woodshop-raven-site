@@ -5,6 +5,8 @@ import StyledComponentsRegistry from './lib/registry';
 import GlobalStyle from '@/components/globalstyles';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import { useEffect } from 'react';
+import firebase, { analytics } from './lib/firebase';
 
 const theme: DefaultTheme = {
 	colors: {
@@ -18,6 +20,10 @@ const theme: DefaultTheme = {
 };
 
 export function ThemeWrapper({ children }: { children: React.ReactNode }) {
+	useEffect(() => {
+		analytics;
+	}, []);
+
 	return (
 		<StyledComponentsRegistry>
 			<ThemeProvider theme={theme}>

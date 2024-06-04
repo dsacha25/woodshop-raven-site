@@ -181,6 +181,15 @@ export const CloseRight = styled(Icon)`
 	}
 `;
 
+export const SocialMediaContainer = styled.div`
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20;
+`;
+
 /* export const CloseLeft = (className: string) => (
 	<Left src={closeLeft} alt="" className={className} />
 );

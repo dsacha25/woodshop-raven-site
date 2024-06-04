@@ -1,7 +1,7 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect } from 'react';
 import {
-	BuyButton,
-	ContactButton,
 	ItemText,
 	ShopButtonsContainer,
 	ShopDescriptionContainer,
@@ -26,8 +26,27 @@ import {
 } from '@/app/services/styles';
 import NavigationButton from '@/components/buttons/navigation-button';
 import SolidLink from '@/components/buttons/solid-link/solid-link';
+import { logEvent } from 'firebase/analytics';
+import { analytics } from '@/app/lib/firebase';
 
 const ShopItemDisplay = (props: ShopItemProps) => {
+	useEffect(() => {
+		logEvent(analytics, 'view_item', {
+			currency: 'USD',
+			value: props.price,
+			items: [
+				{
+					item_name: props.name,
+					item_category: props.category[0],
+					item_category2: props.category[1],
+					item_category3: props.category[2],
+					quantity: props.stock,
+					price: props.price,
+				},
+			],
+		});
+	}, []);
+
 	return (
 		<>
 			<ShopItemDisplayContainer>

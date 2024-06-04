@@ -68,7 +68,7 @@ export const ShopDescriptionContainer = styled.div`
 	grid-template-rows: 100px auto repeat(2, 1.6rem) 80px;
 	height: 100%;
 	width: 100%;
-	padding: 45px 4vw;
+	padding: 45px 8vw;
 	place-items: center;
 	gap: 30px;
 

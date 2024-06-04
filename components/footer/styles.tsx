@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styled from 'styled-components';
-import Etsy from '../../public/images/icons/Etsy_logo.svg.png';
-import Instagram from '../../public/images/icons/instagram.svg';
+import Etsy from '@/public/images/icons/Etsy_logo.svg.png';
+import Instagram from '@/public/images/icons/instagram.svg';
 
 export const FooterContainer = styled.div`
 	display: flex;
@@ -63,18 +63,23 @@ const ELink = styled(Link)`
 	height: auto;
 	aspect-ratio: 1;
 
-	border: 6px solid ${({ theme }) => theme.colors.primary};
+	border: 5px solid ${({ theme }) => theme.colors.primary};
 	border-radius: 20px;
 `;
 
 const ELogo = styled(Image)`
 	width: 60px;
 	height: 30px;
+	padding: 2.5px 5px;
 	margin: auto;
 `;
 
 export const EtsyLink = () => (
-	<ELink href="https://www.etsy.com/shop/WoodshopRaven" target="_blank">
+	<ELink
+		href="https://www.etsy.com/shop/WoodshopRaven"
+		target="_blank"
+		rel="noopener noreferrer"
+	>
 		<ELogo src={Etsy} alt="etsy shop link" />
 	</ELink>
 );

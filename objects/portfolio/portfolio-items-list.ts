@@ -17,6 +17,13 @@ import incenseBurner_01 from '@/public/images/incense-burner/IncenseBurner_01.we
 import incenseBurner_02 from '@/public/images/incense-burner/IncenseBurner_04.webp';
 import incenseBurner_03 from '@/public/images/incense-burner/IncenseBurner_02.webp';
 import incenseBurner_04 from '@/public/images/incense-burner/IncenseBurner_03.webp';
+
+import bratGgPaddle_01 from '@/public/images/paddles/v2/Paddle-V2_01.webp';
+import bratGgPaddle_02 from '@/public/images/paddles/v2/Paddle-V2_02.webp';
+import bratGgPaddle_03 from '@/public/images/paddles/v2/Paddle-V2_03.webp';
+import bratGgPaddle_04 from '@/public/images/paddles/v2/Paddle-V2_04.webp';
+import bratGgPaddle_05 from '@/public/images/paddles/v2/Paddle-V2_05.webp';
+
 import { ImageDisplayProps } from '@/components/horz-image-display';
 
 export type PortfolioItemProps = {
@@ -61,9 +68,8 @@ const portfolioItems: PortfolioItemProps[] = [
 		productLink:
 			'https://www.etsy.com/listing/1449258358/handmade-chess-set-w-optional-engravings',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis hendrerit risus. Vestibulum in pulvinar risus, a egestas velit. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus. Sed condimentum tortor eu nisl vestibulum, euismod venenatis nisi iaculis. Pellentesque massa nisi, placerat quis faucibus in, bibendum ut sapien. Sed eget arcu augue.',
-		quote:
-			"''I would literally eat my own child to get another one of these.'' —The Pope",
+			"A handmade chess set crafted from Walnut and Curly Maple wood. This project was commissioned as a gift for his son. He requested his last name along with 'Dad' and the name of son woodburned onto the border. A box containing the chess pieces was also include.",
+		quote: "''It's a beautiful chess set!'' —Client",
 	},
 	{
 		images: [
@@ -97,7 +103,7 @@ const portfolioItems: PortfolioItemProps[] = [
 		productLink:
 			'https://www.etsy.com/listing/1462901115/tarot-box-w-woodburning-illustrations',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis hendrerit risus. Vestibulum in pulvinar risus, a egestas velit. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus. Sed condimentum tortor eu nisl vestibulum, euismod venenatis nisi iaculis. Pellentesque massa nisi, placerat quis faucibus in, bibendum ut sapien. Sed eget arcu augue.',
+			'This maple tarot card box features 2 drawers lined with felt and custom woodburned illustrations. On the side is a scene of Yosemite National Park. The lid is a custom drawing of a snake and skull as requested by the client.',
 		quote: "''Pretty sure this is cursed. I love it.'' —The Devil",
 	},
 	{
@@ -132,7 +138,7 @@ const portfolioItems: PortfolioItemProps[] = [
 		productLink:
 			'https://www.etsy.com/listing/1483073433/keepsake-box-w-lid-and-drawer',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis hendrerit risus. Vestibulum in pulvinar risus, a egestas velit. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus. Sed condimentum tortor eu nisl vestibulum, euismod venenatis nisi iaculis. Pellentesque massa nisi, placerat quis faucibus in, bibendum ut sapien. Sed eget arcu augue.',
+			'A handmade keepsake box featuring a lid with an woodburned orchid illustration. Each drawer is lined with felt.',
 		quote: "''It's a box.'' —Lucifer",
 	},
 	{
@@ -167,7 +173,42 @@ const portfolioItems: PortfolioItemProps[] = [
 		productLink:
 			'https://www.etsy.com/listing/1483067453/handmade-incense-burner-w-custom',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis hendrerit risus. Vestibulum in pulvinar risus, a egestas velit. Aenean eu ipsum posuere, malesuada ante eget, luctus lacus. Sed condimentum tortor eu nisl vestibulum, euismod venenatis nisi iaculis. Pellentesque massa nisi, placerat quis faucibus in, bibendum ut sapien. Sed eget arcu augue.',
+			'Handmade incense burner with a customized woodburned illustrations. One side featuring waves of the ocean and the other a row of redwood trees. Reach out for your own customized incense burner.',
+		quote: "''This thing is the tits.'' —Merlin",
+	},
+	{
+		images: [
+			{
+				src: bratGgPaddle_01,
+				alt: 'Brat Good Girl Paddle',
+				height: 'auto',
+				width: '100%',
+			},
+			{
+				src: bratGgPaddle_02,
+				alt: 'Brat Good Girl Paddle',
+				height: 'auto',
+				width: '100%',
+			},
+			{
+				src: bratGgPaddle_03,
+				alt: 'Brat Good Girl Paddle',
+				height: 'auto',
+				width: '100%',
+			},
+			{
+				src: bratGgPaddle_04,
+				alt: 'Brat Good Girl Paddle',
+				height: 'auto',
+				width: '100%',
+			},
+		],
+		title: 'Brat/Good Girl Paddle',
+		url: 'brat-good-girl-paddle',
+		productLink:
+			'https://www.etsy.com/listing/1741800383/bratgood-girl-walnut-maple-paddle',
+		description:
+			"This handmade walnut and maple paddle features the words 'brat' and 'good girl' woodburned onto the front and back.",
 		quote: "''This thing is the tits.'' —Merlin",
 	},
 ];

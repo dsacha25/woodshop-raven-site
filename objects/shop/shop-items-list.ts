@@ -1,6 +1,7 @@
 import { StaticImageData } from 'next/image';
 
 import paddle_01 from '@/public/images/paddles/v1/Paddle-V1_01.webp';
+import paddle_02 from '@/public/images/paddles/v2/Paddle-V2_01.webp';
 import incenseBurner from '@/public/images/incense-burner/incense-burner_prod-img.webp';
 import tobaccoPipe from '@/public/images/tobacco-pipe/tobacco_pipe_01.webp';
 import charcuterieBoard from '@/public/images/charcuterie-board/charcuterie_01.webp';
@@ -30,9 +31,21 @@ const shopItemsList: ShopItemProps[] = [
 		productLink:
 			'https://www.etsy.com/listing/1716720497/handcrafted-walnut-spanking-paddle-w',
 		description:
-			'Handmade walnut paddle with nylon rope handle for impact play or teaching your friends a lesson.',
+			'Handmade walnut paddle with optional nylon rope handle. Used for impact play or teaching your friends a lesson.',
 		stock: 3,
 		price: 80,
+	},
+	{
+		src: paddle_02,
+		name: 'Brat Good Girl Paddle',
+		category: ['kink', 'woodburning', 'made-to-order'],
+		url: '/kink/brat-good-girl-paddle',
+		productLink:
+			'https://www.etsy.com/listing/1741800383/bratgood-girl-walnut-maple-paddle',
+		description:
+			"Handmade walnut and maple paddle with 'brat' and 'good girl' woodburned on the front and rear. Used for impact play or teaching your friends a lesson.",
+		stock: 1,
+		price: 100,
 	},
 	{
 		src: incenseBurner,
@@ -55,7 +68,7 @@ const shopItemsList: ShopItemProps[] = [
 			'https://www.etsy.com/listing/1716720497/handcrafted-walnut-spanking-paddle-w',
 		description:
 			'Handmade tobacco pipe made from briar wood imported from Sweden.',
-		stock: 0,
+		stock: 1,
 		price: 40,
 	},
 	{

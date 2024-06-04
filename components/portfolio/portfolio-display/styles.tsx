@@ -43,6 +43,8 @@ export const ImagesGradient = styled.div`
 `;
 
 export const PortfolioImageWrapper = styled.div`
+	display: flex;
+	align-items: center;
 	width: 50vw;
 	height: 100%;
 	aspect-ratio: 2;

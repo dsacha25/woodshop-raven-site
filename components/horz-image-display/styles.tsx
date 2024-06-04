@@ -46,6 +46,7 @@ export const ImageContainer = styled.div<ImageContainerProps>`
 	height: 100%;
 	width: ${({ width }) => (width ? width : 'auto')};
 	justify-content: center;
+	align-items: center;
 	position: relative;
 	overflow: hidden;
 	transition: 500ms ease all;

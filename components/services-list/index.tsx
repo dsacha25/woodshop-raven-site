@@ -22,6 +22,8 @@ import paddle from '@/public/images/paddles/v1/Paddle-V1_01.webp';
 import { SubTitle } from '../titles/subtitle';
 import NavigationButton from '../buttons/navigation-button';
 import { Metadata } from 'next';
+import { logEvent } from 'firebase/analytics';
+import { analytics } from '@/app/lib/firebase';
 
 type ServiceItemProps = {
 	title: string;
@@ -56,15 +58,31 @@ export const services: ServiceItemProps[] = [
 ];
 
 const ServicesList = () => {
+	const handleAnalytics = (name: string) => {
+		const content: Content = {
+			content_type: 'service',
+			content_id: name,
+		};
+
+		logEvent(analytics, 'select_content', content);
+	};
+
 	return (
 		<ServicesListContainer>
 			{services.map((service, i) => (
 				<ServiceItemContainer key={i}>
 					<ServiceItemContentWrapper index={i}>
 						<ActionContainer>
-							<NavigationButton url={service.url} text={service.actionText} />
+							<NavigationButton
+								url={service.url}
+								text={service.actionText}
+								content={{ content_type: 'service', content_id: service.title }}
+							/>
 						</ActionContainer>
-						<ServiceItemImageContainer href={service.url}>
+						<ServiceItemImageContainer
+							onClick={() => handleAnalytics(service.title)}
+							href={service.url}
+						>
 							{i % 2 != 0 ? (
 								<GradientRight width="100%" />
 							) : (
