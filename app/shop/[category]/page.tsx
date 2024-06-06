@@ -10,8 +10,23 @@ import {
 } from '@/app/shop/styles';
 import _ from 'lodash';
 import ClearFilter from '@/components/shop/clear-filter';
+import { Metadata } from 'next';
 
-const ProductCategoryPage = ({ params }: { params: { category: string } }) => {
+interface Props {
+	params: { category: string };
+}
+
+export const generateMetadata = ({ params }: Props): Metadata => {
+	return {
+		title: params.category,
+	};
+};
+
+export const generateStaticParams = () => {
+	return shopItemsList.map((item) => item.category);
+};
+
+const ProductCategoryPage = ({ params }: Props) => {
 	const shopItemsByCategory = _.filter(shopItemsList, function (item) {
 		return item.category.includes(params.category);
 	});

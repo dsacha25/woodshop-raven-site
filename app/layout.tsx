@@ -2,8 +2,6 @@ import { Metadata } from 'next';
 import { ThemeWrapper } from './theme-wrapper';
 import { Michroma } from 'next/font/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
-import firebase, { analytics } from './lib/firebase';
-import { useEffect } from 'react';
 
 export const metadata: Metadata = {
 	title: {

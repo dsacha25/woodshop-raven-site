@@ -1,7 +1,7 @@
 'use client';
 
 import { initializeApp } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
+import { getAnalytics, isSupported, logEvent } from 'firebase/analytics';
 const firebaseConfig = {
 	apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
 	authDomain: 'woodshop-raven.firebaseapp.com',
@@ -14,6 +14,8 @@ const firebaseConfig = {
 
 const firebase = initializeApp(firebaseConfig);
 
-export const analytics = getAnalytics(firebase);
+export const analytics = isSupported().then((yes) =>
+	yes ? getAnalytics(firebase) : null
+);
 
 export default firebase;

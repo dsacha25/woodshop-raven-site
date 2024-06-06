@@ -7,8 +7,8 @@ import {
 	CategoryText,
 	ShopCategoriesContainer,
 } from './styles';
-import { logEvent } from 'firebase/analytics';
-import { analytics } from '@/app/lib/firebase';
+import { getAnalytics, logEvent } from 'firebase/analytics';
+import firebase from '@/app/lib/firebase';
 
 const ShopCategories = () => {
 	const allFilters: string[] = [
@@ -24,7 +24,7 @@ const ShopCategories = () => {
 
 	const handleAnalytics = (category: string) => {
 		console.log(category);
-		logEvent(analytics, 'view_item_list', {
+		logEvent(getAnalytics(firebase), 'view_item_list', {
 			item_list_name: category,
 		});
 	};

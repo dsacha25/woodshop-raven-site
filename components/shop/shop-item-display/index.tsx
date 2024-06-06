@@ -26,12 +26,12 @@ import {
 } from '@/app/services/styles';
 import NavigationButton from '@/components/buttons/navigation-button';
 import SolidLink from '@/components/buttons/solid-link/solid-link';
-import { logEvent } from 'firebase/analytics';
-import { analytics } from '@/app/lib/firebase';
+import { getAnalytics, logEvent } from 'firebase/analytics';
+import firebase from '@/app/lib/firebase';
 
 const ShopItemDisplay = (props: ShopItemProps) => {
 	useEffect(() => {
-		logEvent(analytics, 'view_item', {
+		logEvent(getAnalytics(firebase), 'view_item', {
 			currency: 'USD',
 			value: props.price,
 			items: [

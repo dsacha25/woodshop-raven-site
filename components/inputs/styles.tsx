@@ -1,3 +1,5 @@
+'use client';
+
 import styled, { css } from 'styled-components';
 import { FormInputProps } from './types';
 
@@ -43,9 +45,8 @@ export const Input = styled.input<FormInputProps>`
 	height: 100%;
 	width: 100%;
 	padding: 0 16px;
-
-	font-family: Roboto;
 	font-size: 1rem;
+	letter-spacing: 0.05rem;
 
 	${({ error }) => error && errorStyles}
 
@@ -59,8 +60,6 @@ export const TextAreaInput = styled.textarea<FormInputProps>`
 	height: 180px;
 	width: 100%;
 	padding: 14px 16px 0;
-
-	font-family: Roboto;
 	font-size: 1rem;
 	outline: none;
 

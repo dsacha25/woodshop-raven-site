@@ -3,6 +3,11 @@ import React from 'react';
 import PortfolioItem from '@/components/portfolio/portfolio-item';
 import portfolioItems from '@/objects/portfolio/portfolio-items-list';
 import { PortfolioContentContainer, PortfolioPageContainer } from './styles';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+	title: 'Portfolio',
+};
 
 const Portfolio = () => {
 	return (

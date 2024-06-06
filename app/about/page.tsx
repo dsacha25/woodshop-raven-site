@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 	title: {
 		absolute: 'About',
 	},
+	description: 'Long Beach, CA based woodworker David Sacha.',
 };
 
 const About = () => {

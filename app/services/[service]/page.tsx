@@ -24,8 +24,23 @@ import Testimonial from '@/components/testimony';
 import servicesList from '@/objects/services/services-list';
 import SolidLink from '@/components/buttons/solid-link/solid-link';
 import { SubTitle } from '@/components/titles/subtitle';
+import { Metadata } from 'next';
 
-const ServicePage = ({ params }: { params: { service: string } }) => {
+interface Props {
+	params: { service: string };
+}
+
+export const generateMetadata = ({ params }: Props): Metadata => {
+	return {
+		title: params.service,
+	};
+};
+
+export const generateStaticParams = () => {
+	return Object.keys(servicesList);
+};
+
+const ServicePage = ({ params }: Props) => {
 	const {
 		title,
 		url,

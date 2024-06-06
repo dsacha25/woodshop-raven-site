@@ -22,8 +22,8 @@ import paddle from '@/public/images/paddles/v1/Paddle-V1_01.webp';
 import { SubTitle } from '../titles/subtitle';
 import NavigationButton from '../buttons/navigation-button';
 import { Metadata } from 'next';
-import { logEvent } from 'firebase/analytics';
-import { analytics } from '@/app/lib/firebase';
+import { getAnalytics, logEvent } from 'firebase/analytics';
+import firebase, { analytics } from '@/app/lib/firebase';
 
 type ServiceItemProps = {
 	title: string;
@@ -64,7 +64,7 @@ const ServicesList = () => {
 			content_id: name,
 		};
 
-		logEvent(analytics, 'select_content', content);
+		logEvent(getAnalytics(firebase), 'select_content', content);
 	};
 
 	return (

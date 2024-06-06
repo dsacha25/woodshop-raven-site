@@ -3,8 +3,8 @@
 import { useRouter } from 'next/navigation';
 import React from 'react';
 import { OutlineActionButton } from '../services-list/styles';
-import { logEvent } from 'firebase/analytics';
-import { analytics } from '@/app/lib/firebase';
+import { getAnalytics, logEvent } from 'firebase/analytics';
+import firebase from '@/app/lib/firebase';
 
 type NavButtonProps = {
 	url: string;
@@ -25,7 +25,7 @@ const NavigationButton = ({
 
 	const handleNavigiation = () => {
 		if (content) {
-			logEvent(analytics, 'select_content', content);
+			logEvent(getAnalytics(firebase), 'select_content', content);
 		}
 
 		router.push(url);

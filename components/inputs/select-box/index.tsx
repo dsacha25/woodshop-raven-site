@@ -1,3 +1,5 @@
+'use client';
+
 import React, {
 	ChangeEvent,
 	ChangeEventHandler,
@@ -53,7 +55,7 @@ const SelectBox = forwardRef<HTMLInputElement, SelectInputProps>(
 				<SelectBoxInput
 					error={props.error}
 					ref={ref}
-					hasData={interest !== null}
+					data={interest !== null}
 					required={props.required}
 					readOnly
 				/>

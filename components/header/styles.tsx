@@ -98,7 +98,7 @@ const ELink = styled(Link)`
 	border: 5px solid ${({ theme }) => theme.colors.primary};
 	border-radius: 20px;
 
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: 1250px) {
 		display: none;
 	}
 `;

@@ -5,6 +5,11 @@ import shopItemsList from '@/objects/shop/shop-items-list';
 import ShopItemCard from '@/components/shop/shop-item-card';
 import _ from 'lodash';
 import ShopCategories from '@/components/shop/shop-categories';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+	title: 'Shop',
+};
 
 const Shop = () => {
 	return (

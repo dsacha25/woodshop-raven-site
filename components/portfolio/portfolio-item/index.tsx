@@ -12,8 +12,8 @@ import { PortfolioItemProps } from '@/objects/portfolio/portfolio-items-list';
 import { SubTitle } from '@/components/titles/subtitle';
 import { RightFade } from '@/components/dividers/styles';
 import HorizontalImageDisplay from '@/components/horz-image-display';
-import { logEvent } from 'firebase/analytics';
-import { analytics } from '@/app/lib/firebase';
+import { getAnalytics, logEvent } from 'firebase/analytics';
+import firebase, { analytics } from '@/app/lib/firebase';
 
 function PortfolioItem({
 	images,
@@ -26,7 +26,7 @@ function PortfolioItem({
 			content_id: title,
 		};
 
-		logEvent(analytics, 'select_content', content);
+		logEvent(getAnalytics(firebase), 'select_content', content);
 	};
 
 	return (
