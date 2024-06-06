@@ -11,6 +11,7 @@ import {
 import _ from 'lodash';
 import ClearFilter from '@/components/shop/clear-filter';
 import { Metadata } from 'next';
+import capitalize from '@/utils/text/capitalize';
 
 interface Props {
 	params: { category: string };
@@ -18,7 +19,7 @@ interface Props {
 
 export const generateMetadata = ({ params }: Props): Metadata => {
 	return {
-		title: params.category,
+		title: capitalize(params.category).replaceAll('-', ' '),
 	};
 };
 

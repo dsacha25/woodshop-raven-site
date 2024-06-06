@@ -4,6 +4,7 @@ import React from 'react';
 import ShopItemDisplay from '@/components/shop/shop-item-display';
 import shopItemsList from '@/objects/shop/shop-items-list';
 import { Metadata } from 'next';
+import capitalize from '@/utils/text/capitalize';
 
 interface Param {
 	category: string;
@@ -16,7 +17,7 @@ interface Props {
 
 export function generateMetadata({ params }: Props): Metadata {
 	return {
-		title: params.id,
+		title: capitalize(params.id).replaceAll('-', ' '),
 	};
 }
 
@@ -33,8 +34,6 @@ const ProductItemPage = ({ params }: Props) => {
 	const shopItem = shopItemsList.find(
 		(x) => x.name.replaceAll(' ', '-').toLowerCase() == params.id
 	);
-
-	console.log('PRODUCT PAGE: ', params);
 
 	if (!shopItem) return;
 

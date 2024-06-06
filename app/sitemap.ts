@@ -1,6 +1,4 @@
-import { services } from '@/components/services-list';
 import portfolioItems from '@/objects/portfolio/portfolio-items-list';
-import servicesList from '@/objects/services/services-list';
 import shopItemsList from '@/objects/shop/shop-items-list';
 import { MetadataRoute } from 'next';
 

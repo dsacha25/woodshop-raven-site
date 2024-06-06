@@ -5,6 +5,7 @@ import portfolioItems from '@/objects/portfolio/portfolio-items-list';
 import { PortfolioPageContainer } from '@/app/portfolio/styles';
 import _ from 'lodash';
 import { Metadata } from 'next';
+import capitalize from '@/utils/text/capitalize';
 
 interface Props {
 	params: { portfolioId: string };
@@ -12,7 +13,7 @@ interface Props {
 
 export const generateMetadata = ({ params }: Props): Metadata => {
 	return {
-		title: params.portfolioId,
+		title: capitalize(params.portfolioId).replaceAll('-', ' '),
 	};
 };
 
