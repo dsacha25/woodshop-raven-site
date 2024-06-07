@@ -12,15 +12,15 @@ import {
 	ServicesListContainer,
 } from './styles';
 
-import { GradientLeft, GradientRight } from '../gradients/styles';
+import { GradientLeft, GradientRight } from '../../gradients/styles';
 import { RavenBackgroundImage } from '@/app/styles';
-import { LeftFade, RightFade } from '../dividers/styles';
+import { LeftFade, RightFade } from '../../dividers/styles';
 
 import chessSet from '@/public/images/ibanez-chess-set/IbanezChessSet_01.webp';
 import laraBox from '@/public/images/lara-box/LaraBox_03.webp';
 import paddle from '@/public/images/paddles/v1/Paddle-V1_01.webp';
-import { SubTitle } from '../titles/subtitle';
-import NavigationButton from '../buttons/navigation-button';
+import { SubTitle } from '../../titles/subtitle';
+import NavigationButton from '../../buttons/navigation-button';
 import { Metadata } from 'next';
 import { getAnalytics, logEvent } from 'firebase/analytics';
 import firebase, { analytics } from '@/app/lib/firebase';

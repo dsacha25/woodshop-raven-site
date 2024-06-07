@@ -82,3 +82,19 @@ export const ShopIcon = styled(Image)`
 	height: auto;
 	aspect-ratio: 1;
 `;
+
+export const ShopPhotosDisplay = styled.div`
+	display: grid;
+
+	margin: 5vw;
+	gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+
+	border-radius: 40px;
+	overflow: hidden;
+`;
+
+export const ShopPhoto = styled(Image)`
+	width: 100%;
+	height: 100%;
+`;

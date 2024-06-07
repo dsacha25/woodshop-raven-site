@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionTitle from '@/components/titles/section-title';
-import ServicesList from '@/components/services-list';
+import ServicesList from '@/components/services/services-list';
 import { Metadata } from 'next';
 import { ServicesPageContainer } from './styles';
 

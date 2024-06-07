@@ -56,11 +56,11 @@ export const NameText = styled.h2`
 `;
 
 export const Description = styled.p`
-	font-weight: 400;
+	font-weight: 100;
 	font-size: 1.6rem;
-	line-height: 3rem;
+	line-height: 2rem;
 	text-indent: 50px;
-	margin-bottom: 100px;
+	margin-bottom: 10px;
 
 	place-self: center;
 

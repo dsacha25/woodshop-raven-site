@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import React from 'react';
-import { OutlineActionButton } from '../services-list/styles';
+import { OutlineActionButton } from '../services/services-list/styles';
 import { getAnalytics, logEvent } from 'firebase/analytics';
 import firebase from '@/app/lib/firebase';
 

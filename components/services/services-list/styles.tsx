@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Image from 'next/image';
-import { OutlineButton } from '../buttons/styles';
+import { OutlineButton } from '../../buttons/styles';
 import Link from 'next/link';
 
 interface ServiceContentProps {

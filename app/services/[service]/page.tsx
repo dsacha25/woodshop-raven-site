@@ -25,6 +25,7 @@ import servicesList from '@/objects/services/services-list';
 import SolidLink from '@/components/buttons/solid-link/solid-link';
 import { SubTitle } from '@/components/titles/subtitle';
 import { Metadata } from 'next';
+import capitalize from '@/utils/text/capitalize';
 
 interface Props {
 	params: { service: string };
@@ -32,7 +33,7 @@ interface Props {
 
 export const generateMetadata = ({ params }: Props): Metadata => {
 	return {
-		title: params.service,
+		title: capitalize(params.service),
 	};
 };
 

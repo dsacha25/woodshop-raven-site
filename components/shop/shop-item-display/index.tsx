@@ -7,6 +7,8 @@ import {
 	ShopDescriptionContainer,
 	ShopIcon,
 	ShopItemDisplayContainer,
+	ShopPhoto,
+	ShopPhotosDisplay,
 } from './styles';
 import { ShopItemProps } from '@/objects/shop/shop-items-list';
 import { useRouter } from 'next/navigation';
@@ -95,6 +97,11 @@ const ShopItemDisplay = (props: ShopItemProps) => {
 				</TaglineContainer>
 				<GradientDown />
 			</TaglineWrapper>
+			<ShopPhotosDisplay>
+				{props.additionalPhotos.map((photo, i) => (
+					<ShopPhoto key={i} src={photo} alt={props.name + i} />
+				))}
+			</ShopPhotosDisplay>
 		</>
 	);
 };

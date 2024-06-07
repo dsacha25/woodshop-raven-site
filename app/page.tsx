@@ -23,7 +23,7 @@ import orchidBox from '@/public/images/orchid-box/OrchidBox_01.webp';
 import logoIcon from '@/public/images/branding/WR_Icon.png';
 import { GradientDown, GradientUp } from '@/components/gradients/styles';
 import SectionTitle from '@/components/titles/section-title';
-import ServicesList from '@/components/services-list';
+import ServicesList from '@/components/services/services-list';
 import HorizontalImageDisplay, {
 	ImageDisplayProps,
 } from '@/components/horz-image-display';

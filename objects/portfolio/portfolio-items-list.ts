@@ -68,7 +68,7 @@ const portfolioItems: PortfolioItemProps[] = [
 		productLink:
 			'https://www.etsy.com/listing/1449258358/handmade-chess-set-w-optional-engravings',
 		description:
-			"A handmade chess set crafted from Walnut and Curly Maple wood. This project was commissioned as a gift for his son. He requested his last name along with 'Dad' and the name of son woodburned onto the border. A box containing the chess pieces was also include.",
+			'A handcrafted chess set meticulously fashioned from the finest Walnut and Curly Maple wood. This creation was designed as a heartfelt gift for the client’s son. As a personal touch, the father and son’s names were expertly wood burned onto the border. To complete the set, a beautifully crafted box housing the chess pieces was also included.',
 		quote: "''It's a beautiful chess set!'' —Client",
 	},
 	{
@@ -103,7 +103,7 @@ const portfolioItems: PortfolioItemProps[] = [
 		productLink:
 			'https://www.etsy.com/listing/1462901115/tarot-box-w-woodburning-illustrations',
 		description:
-			'This maple tarot card box features 2 drawers lined with felt and custom woodburned illustrations. On the side is a scene of Yosemite National Park. The lid is a custom drawing of a snake and skull as requested by the client.',
+			'This maple tarot card box showcases two velvet-lined drawers, providing an elegant storage solution for your cards. Custom wood burned illustrations adorn the box, with a captivating scene of Yosemite National Park gracing the side. The lid showcases an intricately designed snake and skull, a unique request from the client, blending the beauty of nature with an edgy, mystical touch. This exquisite box is a perfect fusion of functionality and personalized artistry for tarot enthusiasts.',
 		quote: "''Pretty sure this is cursed. I love it.'' —The Devil",
 	},
 	{
@@ -138,7 +138,7 @@ const portfolioItems: PortfolioItemProps[] = [
 		productLink:
 			'https://www.etsy.com/listing/1483073433/keepsake-box-w-lid-and-drawer',
 		description:
-			'A handmade keepsake box featuring a lid with an woodburned orchid illustration. Each drawer is lined with felt.',
+			'A beautifully handcrafted keepsake box, designed to house your most cherished memories and trinkets. The lid showcases a delicately wood burned orchid illustration. Each drawer is lined with soft felt, offering a gentle and protective space for your valued possessions. This keepsake box not only provides functional storage but also serves as a stunning display piece, enriching your home with its intricate craftsmanship and artistic allure.',
 		quote: "''It's a box.'' —Lucifer",
 	},
 	{
@@ -173,7 +173,7 @@ const portfolioItems: PortfolioItemProps[] = [
 		productLink:
 			'https://www.etsy.com/listing/1483067453/handmade-incense-burner-w-custom',
 		description:
-			'Handmade incense burner with a customized woodburned illustrations. One side featuring waves of the ocean and the other a row of redwood trees. Reach out for your own customized incense burner.',
+			"Our meticulously handmade incense burner offers a unique blend of functionality and personalized artistry. This piece features custom wood burned illustrations, with waves of the ocean on one side and a row of majestic redwood trees on the other, creating an enchanting interplay of nature's serene landscapes. Let the gentle fragrance of incense infuse your home while admiring the captivating visuals this burner offers. Contact us today to commission a custom incense burner tailored to your own unique style and tastes.",
 		quote: "''This thing is the tits.'' —Merlin",
 	},
 	{
@@ -208,7 +208,7 @@ const portfolioItems: PortfolioItemProps[] = [
 		productLink:
 			'https://www.etsy.com/listing/1741800383/bratgood-girl-walnut-maple-paddle',
 		description:
-			"This handmade walnut and maple paddle features the words 'brat' and 'good girl' woodburned onto the front and back.",
+			"This sturdy handcrafted paddle, made from rich walnut and sleek maple, features the phrases 'brat' and 'good girl' wood burned onto the front and back. This playful juxtaposition makes it a perfect addition to any BDSM collection. Experience the artistry and craftsmanship of this paddle as it becomes an essential part of your intimate adventures.",
 		quote: "''This thing is the tits.'' —Merlin",
 	},
 ];
