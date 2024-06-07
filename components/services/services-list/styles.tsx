@@ -13,7 +13,7 @@ export const ServicesListContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
-	gap: 500px;
+	gap: 300px;
 
 	@media screen and (max-width: 700px) {
 		gap: 150px;

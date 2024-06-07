@@ -14,6 +14,7 @@ import {
 	TestimonialsContainer,
 	FullWidthContainer,
 	TestimonyList,
+	ServiceDetailsList,
 } from '../styles';
 import { CenterFadeDivider, LeftFade } from '@/components/dividers/styles';
 import { Paragraph } from '@/components/text/styles';
@@ -26,6 +27,7 @@ import SolidLink from '@/components/buttons/solid-link/solid-link';
 import { SubTitle } from '@/components/titles/subtitle';
 import { Metadata } from 'next';
 import capitalize from '@/utils/text/capitalize';
+import ServiceDetailsCard from '@/components/services/service-details-card';
 
 interface Props {
 	params: { service: string };
@@ -50,6 +52,7 @@ const ServicePage = ({ params }: Props) => {
 		tagline,
 		linkText,
 		description,
+		details,
 		testimonials,
 	} = servicesList[params.service.toLocaleLowerCase()];
 
@@ -76,7 +79,16 @@ const ServicePage = ({ params }: Props) => {
 				</TaglineContainer>
 				<GradientDown />
 			</TaglineWrapper>
-			{testimonials.length > 0 && (
+			<ServiceDetailsList>
+				{details.map((detail, i) => (
+					<ServiceDetailsCard
+						key={detail.title}
+						serviceDetails={detail}
+						reverse={i % 2 != 0}
+					/>
+				))}
+			</ServiceDetailsList>
+			{testimonials.length < 0 && (
 				<TestimonialsContainer>
 					<FullWidthContainer>
 						<SubTitle align="start">Testimonials</SubTitle>

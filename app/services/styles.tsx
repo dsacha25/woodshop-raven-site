@@ -127,3 +127,10 @@ export const TestimonyList = styled.div`
 	width: 100%;
 	gap: 150px;
 `;
+
+export const ServiceDetailsList = styled.div`
+	display: flex;
+	flex-direction: column;
+	padding: 100px 8vw 0;
+	gap: 200px;
+`;
