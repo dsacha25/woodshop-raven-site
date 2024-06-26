@@ -71,6 +71,12 @@ const ServicesList = () => {
 		<ServicesListContainer>
 			{services.map((service, i) => (
 				<ServiceItemContainer key={i}>
+					<ServiceItemTitleContainer>
+						<SubTitle align={i % 2 == 0 ? 'end' : 'start'}>
+							{service.title}
+						</SubTitle>
+						{i % 2 == 0 ? <RightFade /> : <LeftFade />}
+					</ServiceItemTitleContainer>
 					<ServiceItemContentWrapper index={i}>
 						<ActionContainer>
 							<NavigationButton
@@ -93,12 +99,6 @@ const ServicesList = () => {
 						</ServiceItemImageContainer>
 						<RavenBackgroundImage width="75%" reverse={i % 2 == 0} />
 					</ServiceItemContentWrapper>
-					<ServiceItemTitleContainer>
-						{i % 2 == 0 ? <RightFade /> : <LeftFade />}
-						<SubTitle align={i % 2 == 0 ? 'end' : 'start'}>
-							{service.title}
-						</SubTitle>
-					</ServiceItemTitleContainer>
 				</ServiceItemContainer>
 			))}
 		</ServicesListContainer>

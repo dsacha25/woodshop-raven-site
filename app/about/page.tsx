@@ -41,9 +41,7 @@ const About = () => {
 			<AboutContainer>
 				<AboutImagesWrapper>
 					<HorizontalImageDisplay images={images} height="660px" />
-
-					<MobileSelfie src={david_03} alt="David Sacha" priority />
-
+					<MobileSelfie src={david_03} alt="David Sacha" />
 					<NameContainer>
 						<RightFade />
 						<NameText>David Sacha</NameText>

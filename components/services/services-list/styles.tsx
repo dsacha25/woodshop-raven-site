@@ -35,12 +35,14 @@ export const ServiceItemContentWrapper = styled.div<ServiceContentProps>`
 	position: relative;
 
 	@media screen and (max-width: ${mobileWidth}) {
-		flex-direction: column !important;
+		flex-direction: column-reverse;
+		height: auto;
 	}
 `;
 
 export const ActionContainer = styled.div`
 	display: flex;
+	flex-direction: column;
 	width: 100%;
 	height: auto;
 	justify-content: center;
@@ -49,7 +51,7 @@ export const ActionContainer = styled.div`
 	z-index: 1;
 
 	@media screen and (max-width: ${mobileWidth}) {
-		height: 300px;
+		height: 200px;
 	}
 `;
 
@@ -72,7 +74,7 @@ export const ServiceItemImageContainer = styled(Link)`
 	z-index: 1;
 
 	@media screen and (max-width: ${mobileWidth}) {
-		height: 300px;
+		height: 250px;
 	}
 `;
 

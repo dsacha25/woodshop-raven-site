@@ -65,13 +65,13 @@ const servicesList: { [service: string]: ServiceProps } = {
 			{
 				title: 'Keepsake Boxes',
 				description:
-					'A clever line that gets you to give me all of your money for some stupid bullshit I made in my basement.',
+					'Handmade keepsake boxes with customized illustrations and felt lined drawers.',
 				photo: orchidBox_02,
 			},
 			{
 				title: 'Small Pieces',
 				description:
-					'Some bullshit about how I make things like tobacco pipes, incense burners, charcuterie boards, and more.',
+					'We also make smaller pieces like tobacco pipes, incense burners, charcuterie boards, and more.',
 				photo: tobaccoPipe,
 			},
 		],
@@ -113,11 +113,11 @@ const servicesList: { [service: string]: ServiceProps } = {
 			},
 		],
 		testimonials: [
-			{
+			/* 	{
 				photo: dude_01,
 				quote: '“Very nice, how much?”',
 				author: '—Borat',
-			},
+			}, */
 		],
 	},
 	kink: {
@@ -130,7 +130,7 @@ const servicesList: { [service: string]: ServiceProps } = {
 		icon: kinkIcon,
 		tagline: {
 			tagline:
-				'Handcrafted alternative goods & creations for lovers of debauchery.',
+				'Handcrafted, alternative goods & creations for lovers of debauchery and sin.',
 			annotation: 'You sick fucks',
 		},
 		linkText: 'Get A Quote',
@@ -138,37 +138,24 @@ const servicesList: { [service: string]: ServiceProps } = {
 			'Explore our collection of unique paddles, floggers, and more. We also offer custom designs to bring your vision to life, from personalized accessories to statement pieces that reflect your individuality. You sick fucking degenerate.',
 		details: [
 			{
-				title: 'Customized Pieces',
+				title: 'Customized Wood Pieces',
 				description:
-					'Lets create the paddle, flogger, or whatever the fuck else of your dreams: Options include, Wood type, grip, Illustrations/Graphics, and more.',
+					'Lets create the paddle of your dreams: Options include, wood type, grip, illustrations/graphics, and more.',
 				photo: bratPaddle,
 			},
 			{
-				title: 'Bullshit',
+				title: 'Handmade Nylon Floggers',
 				description:
-					'A clever line that gets you to give me all of your money for some stupid bullshit I made in my basement.',
+					'Handmade nylon floggers tailored to your needs, customize everything from color, tassle length, and more',
 				photo: floggerPurple,
 			},
 			{
-				title: 'Lobotomies',
-				description:
-					"Come to my apartment and I'll use a rusty drill bit to give you a lobotomy. Anesthesia not included and results may vary.",
+				title: 'Beautifully Handcrafted',
+				description: 'Each piece is crafted with care.',
 				photo: walnutPaddleHandle,
 			},
 		],
-		testimonials: [
-			{
-				photo: dude_01,
-				quote:
-					'“These paddles are great. I can’t feel my face anymore and I’ve never been happier!”',
-				author: '—Degenerate',
-			},
-			{
-				photo: dude_02,
-				quote: '*Unintelligible dialog followed by a thumbs up*',
-				author: '—Local Idiot',
-			},
-		],
+		testimonials: [],
 	},
 };
 

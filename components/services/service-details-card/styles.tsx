@@ -27,7 +27,7 @@ export const ServiceDetailsContainer = styled.div<ContainerProps>`
 export const PhotoContainer = styled.div`
 	display: flex;
 	position: relative;
-	width: 40%;
+	width: auto;
 	height: 100%;
 	align-items: center;
 	justify-content: center;

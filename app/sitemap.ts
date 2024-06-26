@@ -4,7 +4,7 @@ import { MetadataRoute } from 'next';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 	const shopItems: MetadataRoute.Sitemap = shopItemsList.map((item) => ({
-		url: `${process.env.NEXT_PUBLIC_BASE_URL}${item.url}`,
+		url: `${process.env.NEXT_PUBLIC_BASE_URL}/shop${item.url}`,
 	}));
 
 	const portfolioPieces: MetadataRoute.Sitemap = portfolioItems.map((item) => ({

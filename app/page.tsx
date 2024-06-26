@@ -52,11 +52,7 @@ export default function Home() {
 					<HorizontalImageDisplay images={images} height="640px" />
 					<MobileHeroWrapper>
 						<ImagesGradient />
-						<MobileHeroImage
-							src={laraBox}
-							alt="Woodburned Tarot Card Box"
-							priority
-						/>
+						<MobileHeroImage src={laraBox} alt="Woodburned Tarot Card Box" />
 					</MobileHeroWrapper>
 					<CenterFadeDivider marginY="12px" />
 				</HeroImagesDisplay>

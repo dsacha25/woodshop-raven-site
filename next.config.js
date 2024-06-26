@@ -9,8 +9,10 @@ const nextConfig = {
        fileName: false,
     },
     styledComponents: true,
-    
   },
+  images: {
+    unoptimized: true
+  }
 };
 
 module.exports = nextConfig;

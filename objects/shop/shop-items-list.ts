@@ -75,11 +75,10 @@ const shopItemsList: ShopItemProps[] = [
 		name: 'Walnut Paddle',
 		category: ['kink', 'woodburning', 'made-to-order'],
 		url: '/kink/walnut-paddle',
-		productLink:
-			'https://www.etsy.com/listing/1716720497/handcrafted-walnut-spanking-paddle-w',
+		productLink: 'https://www.etsy.com/listing/1716720497/walnut-paddle',
 		description:
 			'Handmade walnut paddle with optional nylon rope handle. Used for impact play or teaching your friends a lesson.',
-		stock: 3,
+		stock: 2,
 		price: 80,
 		additionalPhotos: [
 			walnutPaddle_01,
@@ -98,9 +97,9 @@ const shopItemsList: ShopItemProps[] = [
 		productLink:
 			'https://www.etsy.com/listing/1741800383/bratgood-girl-walnut-maple-paddle',
 		description:
-			"Handmade walnut and maple paddle with 'brat' and 'good girl' woodburned on the front and rear. Used for impact play or teaching your friends a lesson.",
+			"This sturdy handcrafted paddle, made from rich walnut and sleek maple, features the phrases 'brat' and 'good girl' wood burned onto the front and back. This playful juxtaposition makes it a perfect addition to any BDSM collection. Experience the artistry and craftsmanship of this paddle as it becomes an essential part of your intimate adventures.",
 		stock: 1,
-		price: 100,
+		price: 120,
 		additionalPhotos: [
 			bratPaddle_01,
 			bratPaddle_02,
@@ -117,7 +116,7 @@ const shopItemsList: ShopItemProps[] = [
 		productLink:
 			'https://www.etsy.com/listing/1483067453/handmade-incense-burner-w-custom',
 		description:
-			"Incense burner with optional woodburning illustrations. I'll create an incense burner based whatever inspires you.",
+			"Incense burner with optional woodburning illustrations. This stunning piece is perfect for adding a touch of natural elegance to your home or office decor, while also providing a functional space to burn your favorite incense. Reach out and I'll create an incense burner based on anything that inspires you.",
 		stock: 1,
 		price: 20,
 		additionalPhotos: [
@@ -133,7 +132,7 @@ const shopItemsList: ShopItemProps[] = [
 		category: ['pipes'],
 		url: '/pipes/smoking-pipe',
 		productLink:
-			'https://www.etsy.com/listing/1716720497/handcrafted-walnut-spanking-paddle-w',
+			'https://www.etsy.com/listing/1741630373/handmade-briarwood-pipe-walnut-stand',
 		description:
 			'Handmade tobacco pipe made from briar wood imported from Sweden.',
 		stock: 1,

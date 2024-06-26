@@ -89,7 +89,7 @@ export const Tagline = styled.h2`
 	font-size: 3rem;
 	font-weight: 400;
 	letter-spacing: 0.25rem;
-	margin: 0;
+	margin: 0 6vw;
 	text-align: center;
 
 	@media screen and (max-width: 800px) {
@@ -99,7 +99,9 @@ export const Tagline = styled.h2`
 
 export const Annotation = styled.p`
 	font-family: kalmansk;
-	font-size: 1.8rem;
+	font-size: 2rem;
+	font-style: italic;
+	letter-spacing: 0.1rem;
 `;
 
 export const TestimonialsContainer = styled.div`

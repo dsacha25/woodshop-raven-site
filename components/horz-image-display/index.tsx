@@ -34,7 +34,6 @@ function HorizontalImageDisplay(props: HorzImageDisplayProps) {
 						width={width}
 						height={height}
 						horzAdjustment={horzAdjustment}
-						priority
 					/>
 				</ImageContainer>
 			))}

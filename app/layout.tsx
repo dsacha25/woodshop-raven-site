@@ -4,6 +4,7 @@ import { Michroma } from 'next/font/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 export const metadata: Metadata = {
+	metadataBase: new URL('https://woodshopraven.com'),
 	title: {
 		default: 'Woodshop Raven',
 		template: '%s | Woodshop Raven',

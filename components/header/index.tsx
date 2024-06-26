@@ -20,7 +20,7 @@ const Header = () => {
 	return (
 		<Nav>
 			<Link href="/">
-				<HomeLink src={logo} width={246} height={90} alt="logo" />
+				<HomeLink src={logo} width={246} height={90} alt="logo" unoptimized />
 			</Link>
 			<LinksContainer>
 				<PageLink active={pathname == '/portfolio'} href="/portfolio">
